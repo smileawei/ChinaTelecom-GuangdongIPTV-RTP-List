@@ -11,11 +11,7 @@
 
 ## 使用方法
 
-将上面的订阅地址添加到支持 M3U 的播放器中：
-
-- **电视端**：TiviMate、IPTV Pro、Kodi
-- **手机端**：APTV、ntPlayer
-- **电脑端**：VLC、PotPlayer、IINA
+配合 [rtp2httpd](https://github.com/stackia/rtp2httpd) 使用，将 RTP 组播流转为 HTTP 单播流后，通过支持 M3U 的播放器订阅观看。
 
 ## 频道概况
 
