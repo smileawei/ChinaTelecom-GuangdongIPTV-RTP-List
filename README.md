@@ -1,3 +1,36 @@
+# 广东电信 IPTV 播放列表
+
+基于上游频道数据，每日自动测试可用性并生成优化后的 M3U 播放列表。
+
+## 播放列表
+
+| 文件 | 说明 | 订阅地址 |
+|------|------|---------|
+| `iptv.m3u` | 每频道保留最佳源（推荐） | `https://raw.githubusercontent.com/smileawei/ChinaTelecom-GuangdongIPTV-RTP-List/master/iptv.m3u` |
+| `iptv-all.m3u` | 每频道保留所有源（聚合） | `https://raw.githubusercontent.com/smileawei/ChinaTelecom-GuangdongIPTV-RTP-List/master/iptv-all.m3u` |
+
+## 使用方法
+
+将上面的订阅地址添加到支持 M3U 的播放器中：
+
+- **电视端**：TiviMate、IPTV Pro、Kodi
+- **手机端**：APTV、ntPlayer
+- **电脑端**：VLC、PotPlayer、IINA
+
+## 频道分类
+
+| 分类 | 说明 |
+|------|------|
+| CCTV | 央视主频道及付费频道 |
+| 各省卫视 | 省级卫视，按热门程度排序 |
+| 深圳频道 | 深圳本地频道 |
+| 广东省级频道 | 广东省级频道 |
+| 省级和国家级频道 | CETV、金鹰等 |
+| 广东地方频道 | 广东各市地方频道 |
+| IPTV主题频道 | 电信自制轮播频道 |
+
+---
+
 # ChinaTelecom-GuangdongIPTV-RTP-List
 广州电信广东IPTV列表（组播地址）
 
