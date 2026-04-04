@@ -1,117 +1,117 @@
-#EXTM3U name="广东电信IPTV可用频道(聚合)"
-#EXTINF:-1 tvg-name="CCTV1" group-title="CCTV",CCTV1
+#EXTM3U x-tvg-url="https://raw.githubusercontent.com/smileawei/ChinaTelecom-GuangdongIPTV-RTP-List/master/epg.xml" name="广东电信IPTV可用频道(聚合)"
+#EXTINF:-1 tvg-name="CCTV-1" group-title="CCTV",CCTV1
 rtp://239.77.1.17:5146
-#EXTINF:-1 tvg-name="CCTV1" group-title="CCTV",CCTV1
+#EXTINF:-1 tvg-name="CCTV-1" group-title="CCTV",CCTV1
 rtp://239.77.0.86:5146
-#EXTINF:-1 tvg-name="CCTV1" group-title="CCTV",CCTV1
+#EXTINF:-1 tvg-name="CCTV-1" group-title="CCTV",CCTV1
 rtp://239.77.0.129:5146
-#EXTINF:-1 tvg-name="CCTV1" group-title="CCTV",CCTV1
+#EXTINF:-1 tvg-name="CCTV-1" group-title="CCTV",CCTV1
 rtp://239.77.1.144:5146
-#EXTINF:-1 tvg-name="CCTV1" group-title="CCTV",CCTV1
+#EXTINF:-1 tvg-name="CCTV-1" group-title="CCTV",CCTV1
 rtp://239.77.0.119:5146
-#EXTINF:-1 tvg-name="CCTV1" group-title="CCTV",CCTV1
+#EXTINF:-1 tvg-name="CCTV-1" group-title="CCTV",CCTV1
 rtp://239.77.0.14:5146
-#EXTINF:-1 tvg-name="CCTV1" group-title="CCTV",CCTV1
+#EXTINF:-1 tvg-name="CCTV-1" group-title="CCTV",CCTV1
 rtp://239.77.0.30:5146
-#EXTINF:-1 tvg-name="CCTV2" group-title="CCTV",CCTV2
+#EXTINF:-1 tvg-name="CCTV-2" group-title="CCTV",CCTV2
 rtp://239.77.1.158:5146
-#EXTINF:-1 tvg-name="CCTV2" group-title="CCTV",CCTV2
+#EXTINF:-1 tvg-name="CCTV-2" group-title="CCTV",CCTV2
 rtp://239.77.0.137:5146
-#EXTINF:-1 tvg-name="CCTV2" group-title="CCTV",CCTV2
+#EXTINF:-1 tvg-name="CCTV-2" group-title="CCTV",CCTV2
 rtp://239.77.0.31:5146
-#EXTINF:-1 tvg-name="CCTV3" group-title="CCTV",CCTV3
+#EXTINF:-1 tvg-name="CCTV-3" group-title="CCTV",CCTV3
 rtp://239.77.0.169:5146
-#EXTINF:-1 tvg-name="CCTV3" group-title="CCTV",CCTV3
+#EXTINF:-1 tvg-name="CCTV-3" group-title="CCTV",CCTV3
 rtp://239.77.0.32:5146
-#EXTINF:-1 tvg-name="CCTV4" group-title="CCTV",CCTV4
+#EXTINF:-1 tvg-name="CCTV-4" group-title="CCTV",CCTV4
 rtp://239.77.1.166:5146
-#EXTINF:-1 tvg-name="CCTV4" group-title="CCTV",CCTV4
+#EXTINF:-1 tvg-name="CCTV-4" group-title="CCTV",CCTV4
 rtp://239.77.1.163:5146
-#EXTINF:-1 tvg-name="CCTV4" group-title="CCTV",CCTV4
+#EXTINF:-1 tvg-name="CCTV-4" group-title="CCTV",CCTV4
 rtp://239.77.0.78:5146
-#EXTINF:-1 tvg-name="CCTV4" group-title="CCTV",CCTV4
+#EXTINF:-1 tvg-name="CCTV-4" group-title="CCTV",CCTV4
 rtp://239.77.0.33:5146
-#EXTINF:-1 tvg-name="CCTV4K" group-title="CCTV",CCTV4K
+#EXTINF:-1 tvg-name="CCTV-4K" group-title="CCTV",CCTV4K
 rtp://239.77.0.194:5146
-#EXTINF:-1 tvg-name="CCTV4K" group-title="CCTV",CCTV4K
+#EXTINF:-1 tvg-name="CCTV-4K" group-title="CCTV",CCTV4K
 rtp://239.77.1.180:5146
-#EXTINF:-1 tvg-name="CCTV5" group-title="CCTV",CCTV5
+#EXTINF:-1 tvg-name="CCTV-5" group-title="CCTV",CCTV5
 rtp://239.77.0.170:5146
-#EXTINF:-1 tvg-name="CCTV5" group-title="CCTV",CCTV5
+#EXTINF:-1 tvg-name="CCTV-5" group-title="CCTV",CCTV5
 rtp://239.77.0.34:5146
-#EXTINF:-1 tvg-name="CCTV5+" group-title="CCTV",CCTV5+
+#EXTINF:-1 tvg-name="CCTV-5+" group-title="CCTV",CCTV5+
 rtp://239.77.0.87:5146
-#EXTINF:-1 tvg-name="CCTV5+" group-title="CCTV",CCTV5+
+#EXTINF:-1 tvg-name="CCTV-5+" group-title="CCTV",CCTV5+
 rtp://239.77.1.31:5146
-#EXTINF:-1 tvg-name="CCTV6" group-title="CCTV",CCTV6
+#EXTINF:-1 tvg-name="CCTV-6" group-title="CCTV",CCTV6
 rtp://239.77.0.171:5146
-#EXTINF:-1 tvg-name="CCTV6" group-title="CCTV",CCTV6
+#EXTINF:-1 tvg-name="CCTV-6" group-title="CCTV",CCTV6
 rtp://239.77.0.35:5146
-#EXTINF:-1 tvg-name="CCTV7" group-title="CCTV",CCTV7
+#EXTINF:-1 tvg-name="CCTV-7" group-title="CCTV",CCTV7
 rtp://239.77.1.159:5146
-#EXTINF:-1 tvg-name="CCTV7" group-title="CCTV",CCTV7
+#EXTINF:-1 tvg-name="CCTV-7" group-title="CCTV",CCTV7
 rtp://239.77.0.138:5146
-#EXTINF:-1 tvg-name="CCTV7" group-title="CCTV",CCTV7
+#EXTINF:-1 tvg-name="CCTV-7" group-title="CCTV",CCTV7
 rtp://239.77.0.36:5146
-#EXTINF:-1 tvg-name="CCTV8" group-title="CCTV",CCTV8
+#EXTINF:-1 tvg-name="CCTV-8" group-title="CCTV",CCTV8
 rtp://239.77.0.172:5146
-#EXTINF:-1 tvg-name="CCTV8" group-title="CCTV",CCTV8
+#EXTINF:-1 tvg-name="CCTV-8" group-title="CCTV",CCTV8
 rtp://239.77.0.37:5146
-#EXTINF:-1 tvg-name="CCTV9" group-title="CCTV",CCTV9
+#EXTINF:-1 tvg-name="CCTV-9" group-title="CCTV",CCTV9
 rtp://239.77.1.160:5146
-#EXTINF:-1 tvg-name="CCTV9" group-title="CCTV",CCTV9
+#EXTINF:-1 tvg-name="CCTV-9" group-title="CCTV",CCTV9
 rtp://239.77.0.135:5146
-#EXTINF:-1 tvg-name="CCTV9" group-title="CCTV",CCTV9
+#EXTINF:-1 tvg-name="CCTV-9" group-title="CCTV",CCTV9
 rtp://239.77.0.38:5146
-#EXTINF:-1 tvg-name="CCTV10" group-title="CCTV",CCTV10
+#EXTINF:-1 tvg-name="CCTV-10" group-title="CCTV",CCTV10
 rtp://239.77.1.113:5146
-#EXTINF:-1 tvg-name="CCTV10" group-title="CCTV",CCTV10
+#EXTINF:-1 tvg-name="CCTV-10" group-title="CCTV",CCTV10
 rtp://239.77.0.134:5146
-#EXTINF:-1 tvg-name="CCTV10" group-title="CCTV",CCTV10
+#EXTINF:-1 tvg-name="CCTV-10" group-title="CCTV",CCTV10
 rtp://239.77.0.39:5146
-#EXTINF:-1 tvg-name="CCTV11" group-title="CCTV",CCTV11
+#EXTINF:-1 tvg-name="CCTV-11" group-title="CCTV",CCTV11
 rtp://239.77.1.108:5146
-#EXTINF:-1 tvg-name="CCTV11" group-title="CCTV",CCTV11
+#EXTINF:-1 tvg-name="CCTV-11" group-title="CCTV",CCTV11
 rtp://239.77.1.238:5146
-#EXTINF:-1 tvg-name="CCTV11" group-title="CCTV",CCTV11
+#EXTINF:-1 tvg-name="CCTV-11" group-title="CCTV",CCTV11
 rtp://239.77.0.40:5146
-#EXTINF:-1 tvg-name="CCTV12" group-title="CCTV",CCTV12
+#EXTINF:-1 tvg-name="CCTV-12" group-title="CCTV",CCTV12
 rtp://239.77.1.109:5146
-#EXTINF:-1 tvg-name="CCTV12" group-title="CCTV",CCTV12
+#EXTINF:-1 tvg-name="CCTV-12" group-title="CCTV",CCTV12
 rtp://239.77.0.136:5146
-#EXTINF:-1 tvg-name="CCTV12" group-title="CCTV",CCTV12
+#EXTINF:-1 tvg-name="CCTV-12" group-title="CCTV",CCTV12
 rtp://239.77.0.41:5146
-#EXTINF:-1 tvg-name="CCTV13" group-title="CCTV",CCTV13
+#EXTINF:-1 tvg-name="CCTV-13" group-title="CCTV",CCTV13
 rtp://239.253.43.196:5146
-#EXTINF:-1 tvg-name="CCTV13" group-title="CCTV",CCTV13
+#EXTINF:-1 tvg-name="CCTV-13" group-title="CCTV",CCTV13
 rtp://239.77.0.188:5146
-#EXTINF:-1 tvg-name="CCTV13" group-title="CCTV",CCTV13
+#EXTINF:-1 tvg-name="CCTV-13" group-title="CCTV",CCTV13
 rtp://239.77.0.42:5146
-#EXTINF:-1 tvg-name="CCTV14" group-title="CCTV",CCTV14
+#EXTINF:-1 tvg-name="CCTV-14" group-title="CCTV",CCTV14
 rtp://239.77.1.161:5146
-#EXTINF:-1 tvg-name="CCTV14" group-title="CCTV",CCTV14
+#EXTINF:-1 tvg-name="CCTV-14" group-title="CCTV",CCTV14
 rtp://239.77.1.171:5146
-#EXTINF:-1 tvg-name="CCTV14" group-title="CCTV",CCTV14
+#EXTINF:-1 tvg-name="CCTV-14" group-title="CCTV",CCTV14
 rtp://239.77.0.133:5146
-#EXTINF:-1 tvg-name="CCTV14" group-title="CCTV",CCTV14
+#EXTINF:-1 tvg-name="CCTV-14" group-title="CCTV",CCTV14
 rtp://239.77.0.43:5146
-#EXTINF:-1 tvg-name="CCTV15" group-title="CCTV",CCTV15
+#EXTINF:-1 tvg-name="CCTV-15" group-title="CCTV",CCTV15
 rtp://239.77.1.120:5146
-#EXTINF:-1 tvg-name="CCTV15" group-title="CCTV",CCTV15
+#EXTINF:-1 tvg-name="CCTV-15" group-title="CCTV",CCTV15
 rtp://239.77.1.239:5146
-#EXTINF:-1 tvg-name="CCTV15" group-title="CCTV",CCTV15
+#EXTINF:-1 tvg-name="CCTV-15" group-title="CCTV",CCTV15
 rtp://239.77.0.44:5146
-#EXTINF:-1 tvg-name="CCTV16" group-title="CCTV",CCTV16
+#EXTINF:-1 tvg-name="CCTV-16" group-title="CCTV",CCTV16
 rtp://239.77.0.18:5146
-#EXTINF:-1 tvg-name="CCTV16" group-title="CCTV",CCTV16
+#EXTINF:-1 tvg-name="CCTV-16" group-title="CCTV",CCTV16
 rtp://239.77.0.218:5146
-#EXTINF:-1 tvg-name="CCTV16" group-title="CCTV",CCTV16
+#EXTINF:-1 tvg-name="CCTV-16" group-title="CCTV",CCTV16
 rtp://239.77.0.165:5146
-#EXTINF:-1 tvg-name="CCTV17" group-title="CCTV",CCTV17
+#EXTINF:-1 tvg-name="CCTV-17" group-title="CCTV",CCTV17
 rtp://239.77.1.121:5146
-#EXTINF:-1 tvg-name="CCTV17" group-title="CCTV",CCTV17
+#EXTINF:-1 tvg-name="CCTV-17" group-title="CCTV",CCTV17
 rtp://239.77.0.198:5146
-#EXTINF:-1 tvg-name="CCTV17" group-title="CCTV",CCTV17
+#EXTINF:-1 tvg-name="CCTV-17" group-title="CCTV",CCTV17
 rtp://239.77.0.115:5146
 #EXTINF:-1 tvg-name="世界地理" group-title="CCTV",世界地理
 rtp://239.253.43.7:5146
@@ -471,9 +471,9 @@ rtp://239.77.1.20:5146
 rtp://239.77.0.85:5146
 #EXTINF:-1 tvg-name="经济科教" group-title="广东省级频道",经济科教
 rtp://239.77.0.167:5146
-#EXTINF:-1 tvg-name="CETV1" group-title="省级和国家级频道",CETV1
+#EXTINF:-1 tvg-name="CETV-1" group-title="省级和国家级频道",CETV1
 rtp://239.77.0.200:5146
-#EXTINF:-1 tvg-name="CETV1" group-title="省级和国家级频道",CETV1
+#EXTINF:-1 tvg-name="CETV-1" group-title="省级和国家级频道",CETV1
 rtp://239.77.1.222:5146
 #EXTINF:-1 tvg-name="CETV4" group-title="省级和国家级频道",CETV4
 rtp://239.253.43.114:5146
@@ -491,7 +491,7 @@ rtp://239.77.0.164:5146
 rtp://239.77.1.217:5146
 #EXTINF:-1 tvg-name="金鹰纪实" group-title="省级和国家级频道",金鹰纪实
 rtp://239.77.0.160:5146
-#EXTINF:-1 tvg-name="CETV2" group-title="省级和国家级频道",CETV2
+#EXTINF:-1 tvg-name="CETV-2" group-title="省级和国家级频道",CETV2
 rtp://239.77.0.28:5146
 #EXTINF:-1 tvg-name="书画" group-title="省级和国家级频道",书画
 rtp://239.77.1.115:5146
