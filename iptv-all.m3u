@@ -1,8 +1,8 @@
 #EXTM3U name="广东电信IPTV可用频道(聚合)"
 #EXTINF:-1 tvg-name="CCTV1" group-title="CCTV",CCTV1
-rtp://239.77.0.86:5146
-#EXTINF:-1 tvg-name="CCTV1" group-title="CCTV",CCTV1
 rtp://239.77.1.17:5146
+#EXTINF:-1 tvg-name="CCTV1" group-title="CCTV",CCTV1
+rtp://239.77.0.86:5146
 #EXTINF:-1 tvg-name="CCTV1" group-title="CCTV",CCTV1
 rtp://239.77.0.129:5146
 #EXTINF:-1 tvg-name="CCTV1" group-title="CCTV",CCTV1
@@ -98,9 +98,9 @@ rtp://239.77.1.239:5146
 #EXTINF:-1 tvg-name="CCTV15" group-title="CCTV",CCTV15
 rtp://239.77.0.44:5146
 #EXTINF:-1 tvg-name="CCTV16" group-title="CCTV",CCTV16
-rtp://239.77.0.218:5146
-#EXTINF:-1 tvg-name="CCTV16" group-title="CCTV",CCTV16
 rtp://239.77.0.18:5146
+#EXTINF:-1 tvg-name="CCTV16" group-title="CCTV",CCTV16
+rtp://239.77.0.218:5146
 #EXTINF:-1 tvg-name="CCTV16" group-title="CCTV",CCTV16
 rtp://239.77.0.165:5146
 #EXTINF:-1 tvg-name="CCTV17" group-title="CCTV",CCTV17
@@ -224,19 +224,19 @@ rtp://239.77.1.4:5146
 #EXTINF:-1 tvg-name="北京卫视" group-title="各省卫视",北京卫视
 rtp://239.77.0.233:5146
 #EXTINF:-1 tvg-name="广东卫视" group-title="各省卫视",广东卫视
-rtp://239.77.0.66:5146
-#EXTINF:-1 tvg-name="广东卫视" group-title="各省卫视",广东卫视
 rtp://239.77.0.65:5146
 #EXTINF:-1 tvg-name="广东卫视" group-title="各省卫视",广东卫视
 rtp://239.77.1.152:5146
 #EXTINF:-1 tvg-name="广东卫视" group-title="各省卫视",广东卫视
 rtp://239.77.1.19:5146
 #EXTINF:-1 tvg-name="广东卫视" group-title="各省卫视",广东卫视
-rtp://239.77.0.4:5146
-#EXTINF:-1 tvg-name="广东卫视" group-title="各省卫视",广东卫视
 rtp://239.77.0.84:5146
 #EXTINF:-1 tvg-name="广东卫视" group-title="各省卫视",广东卫视
+rtp://239.77.0.4:5146
+#EXTINF:-1 tvg-name="广东卫视" group-title="各省卫视",广东卫视
 rtp://239.77.0.166:5146
+#EXTINF:-1 tvg-name="广东卫视" group-title="各省卫视",广东卫视
+rtp://239.77.0.66:5146
 #EXTINF:-1 tvg-name="深圳卫视" group-title="各省卫视",深圳卫视
 rtp://239.77.1.14:5146
 #EXTINF:-1 tvg-name="深圳卫视" group-title="各省卫视",深圳卫视
@@ -278,9 +278,9 @@ rtp://239.77.1.174:5146
 #EXTINF:-1 tvg-name="湖北卫视" group-title="各省卫视",湖北卫视
 rtp://239.77.0.128:5146
 #EXTINF:-1 tvg-name="湖北卫视" group-title="各省卫视",湖北卫视
-rtp://239.77.1.93:5146
-#EXTINF:-1 tvg-name="湖北卫视" group-title="各省卫视",湖北卫视
 rtp://239.77.0.95:5146
+#EXTINF:-1 tvg-name="湖北卫视" group-title="各省卫视",湖北卫视
+rtp://239.77.1.93:5146
 #EXTINF:-1 tvg-name="安徽卫视" group-title="各省卫视",安徽卫视
 rtp://239.77.0.183:5146
 #EXTINF:-1 tvg-name="安徽卫视" group-title="各省卫视",安徽卫视
@@ -420,9 +420,9 @@ rtp://239.77.1.175:5146
 #EXTINF:-1 tvg-name="广东" group-title="广东省级频道",广东
 rtp://239.77.0.244:5146
 #EXTINF:-1 tvg-name="广东" group-title="广东省级频道",广东
-rtp://239.77.0.245:5146
-#EXTINF:-1 tvg-name="广东" group-title="广东省级频道",广东
 rtp://239.77.1.237:5146
+#EXTINF:-1 tvg-name="广东" group-title="广东省级频道",广东
+rtp://239.77.0.245:5146
 #EXTINF:-1 tvg-name="嘉佳卡通" group-title="广东省级频道",嘉佳卡通
 rtp://239.77.0.179:5146
 #EXTINF:-1 tvg-name="嘉佳卡通" group-title="广东省级频道",嘉佳卡通
@@ -460,9 +460,9 @@ rtp://239.77.1.22:5146
 #EXTINF:-1 tvg-name="睛彩" group-title="广东省级频道",睛彩
 rtp://239.77.1.23:5146
 #EXTINF:-1 tvg-name="睛彩" group-title="广东省级频道",睛彩
-rtp://239.77.1.20:5146
-#EXTINF:-1 tvg-name="睛彩" group-title="广东省级频道",睛彩
 rtp://239.77.1.21:5146
+#EXTINF:-1 tvg-name="睛彩" group-title="广东省级频道",睛彩
+rtp://239.77.1.20:5146
 #EXTINF:-1 tvg-name="经济科教" group-title="广东省级频道",经济科教
 rtp://239.77.0.85:5146
 #EXTINF:-1 tvg-name="经济科教" group-title="广东省级频道",经济科教
@@ -598,9 +598,9 @@ rtp://239.77.0.105:5146
 #EXTINF:-1 tvg-name="IPTV爱大剧" group-title="IPTV主题频道",IPTV爱大剧
 rtp://239.77.1.82:5146
 #EXTINF:-1 tvg-name="IPTV爱电影" group-title="IPTV主题频道",IPTV爱电影
-rtp://239.77.0.103:5146
-#EXTINF:-1 tvg-name="IPTV爱电影" group-title="IPTV主题频道",IPTV爱电影
 rtp://239.77.1.138:5146
+#EXTINF:-1 tvg-name="IPTV爱电影" group-title="IPTV主题频道",IPTV爱电影
+rtp://239.77.0.103:5146
 #EXTINF:-1 tvg-name="IPTV爱综艺" group-title="IPTV主题频道",IPTV爱综艺
 rtp://239.77.0.107:5146
 #EXTINF:-1 tvg-name="IPTV相声小品" group-title="IPTV主题频道",IPTV相声小品
