@@ -9,6 +9,7 @@
 | `iptv.m3u` | 每频道保留最佳源（推荐） | `https://raw.githubusercontent.com/smileawei/ChinaTelecom-GuangdongIPTV-RTP-List/master/iptv.m3u` |
 | `iptv-all.m3u` | 每频道保留所有源（聚合） | `https://raw.githubusercontent.com/smileawei/ChinaTelecom-GuangdongIPTV-RTP-List/master/iptv-all.m3u` |
 | `iptv-epg.m3u` | 仅含有EPG的频道 | `https://raw.githubusercontent.com/smileawei/ChinaTelecom-GuangdongIPTV-RTP-List/master/iptv-epg.m3u` |
+| `iptv-all-epg.m3u` | 仅含有EPG的频道（聚合） | `https://raw.githubusercontent.com/smileawei/ChinaTelecom-GuangdongIPTV-RTP-List/master/iptv-all-epg.m3u` |
 
 ## 使用方法
 
@@ -18,7 +19,7 @@
 
 ## 频道概况
 
-> 最后更新: 2026-04-05 01:43 | 测试地址: 401 | 可用: 354 | 不可用: 47
+> 最后更新: 2026-04-05 01:45 | 测试地址: 401 | 可用: 354 | 不可用: 47
 
 | 分类 | 频道数（源数） | 质量分布 |
 |------|-------------|---------|
