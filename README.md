@@ -11,7 +11,9 @@
 
 ## 使用方法
 
-配合 [rtp2httpd](https://github.com/stackia/rtp2httpd) 使用，将 RTP 组播流转为 HTTP 单播流后，通过支持 M3U 的播放器订阅观看。
+配合 [rtp2httpd](https://github.com/stackia/rtp2httpd) 使用，将 RTP 组播流转为 HTTP 单播流后，通过支持 M3U 的播放器订阅观看。聚合模式（iptv-all.m3u）推荐使用 APTV。
+
+**本人环境**：广东电信 IPTV（OpenWrt + ipoe 拨号获取 IPTV 网络）→ rtp2httpd 组播转 HTTP 流 → APTV 播放（Apple TV）
 
 ## 频道概况
 
