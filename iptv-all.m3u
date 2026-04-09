@@ -102,9 +102,9 @@ rtp://239.77.1.239:5146
 #EXTINF:-1 tvg-name="CCTV-15" group-title="CCTV",CCTV15
 rtp://239.77.0.44:5146
 #EXTINF:-1 tvg-name="CCTV-16" group-title="CCTV",CCTV16
-rtp://239.77.0.18:5146
-#EXTINF:-1 tvg-name="CCTV-16" group-title="CCTV",CCTV16
 rtp://239.77.0.218:5146
+#EXTINF:-1 tvg-name="CCTV-16" group-title="CCTV",CCTV16
+rtp://239.77.0.18:5146
 #EXTINF:-1 tvg-name="CCTV-16" group-title="CCTV",CCTV16
 rtp://239.77.0.165:5146
 #EXTINF:-1 tvg-name="CCTV-17" group-title="CCTV",CCTV17
@@ -228,6 +228,8 @@ rtp://239.77.1.4:5146
 #EXTINF:-1 tvg-name="北京卫视" group-title="各省卫视",北京卫视
 rtp://239.77.0.233:5146
 #EXTINF:-1 tvg-name="广东卫视" group-title="各省卫视",广东卫视
+rtp://239.77.0.66:5146
+#EXTINF:-1 tvg-name="广东卫视" group-title="各省卫视",广东卫视
 rtp://239.77.0.65:5146
 #EXTINF:-1 tvg-name="广东卫视" group-title="各省卫视",广东卫视
 rtp://239.77.1.152:5146
@@ -239,8 +241,6 @@ rtp://239.77.0.84:5146
 rtp://239.77.0.4:5146
 #EXTINF:-1 tvg-name="广东卫视" group-title="各省卫视",广东卫视
 rtp://239.77.0.166:5146
-#EXTINF:-1 tvg-name="广东卫视" group-title="各省卫视",广东卫视
-rtp://239.77.0.66:5146
 #EXTINF:-1 tvg-name="深圳卫视" group-title="各省卫视",深圳卫视
 rtp://239.77.1.14:5146
 #EXTINF:-1 tvg-name="深圳卫视" group-title="各省卫视",深圳卫视
@@ -354,9 +354,9 @@ rtp://239.77.1.221:5146
 #EXTINF:-1 tvg-name="甘肃卫视" group-title="各省卫视",甘肃卫视
 rtp://239.77.0.189:5146
 #EXTINF:-1 tvg-name="吉林卫视" group-title="各省卫视",吉林卫视
-rtp://239.77.0.150:5146
-#EXTINF:-1 tvg-name="吉林卫视" group-title="各省卫视",吉林卫视
 rtp://239.77.1.111:5146
+#EXTINF:-1 tvg-name="吉林卫视" group-title="各省卫视",吉林卫视
+rtp://239.77.0.150:5146
 #EXTINF:-1 tvg-name="海南卫视" group-title="各省卫视",海南卫视
 rtp://239.253.43.101:5146
 #EXTINF:-1 tvg-name="海南卫视" group-title="各省卫视",海南卫视
@@ -410,9 +410,9 @@ rtp://239.77.0.96:5146
 #EXTINF:-1 tvg-name="深圳少儿频道" group-title="深圳频道",深圳少儿频道
 rtp://239.77.1.244:5146
 #EXTINF:-1 tvg-name="深圳电视剧频道" group-title="深圳频道",深圳电视剧频道
-rtp://239.77.1.177:5146
-#EXTINF:-1 tvg-name="深圳电视剧频道" group-title="深圳频道",深圳电视剧频道
 rtp://239.77.1.125:5146
+#EXTINF:-1 tvg-name="深圳电视剧频道" group-title="深圳频道",深圳电视剧频道
+rtp://239.77.1.177:5146
 #EXTINF:-1 tvg-name="深圳都市频道" group-title="深圳频道",深圳都市频道
 rtp://239.77.1.176:5146
 #EXTINF:-1 tvg-name="深圳都市频道" group-title="深圳频道",深圳都市频道
@@ -464,9 +464,9 @@ rtp://239.77.1.22:5146
 #EXTINF:-1 tvg-name="睛彩" group-title="广东省级频道",睛彩
 rtp://239.77.1.23:5146
 #EXTINF:-1 tvg-name="睛彩" group-title="广东省级频道",睛彩
-rtp://239.77.1.21:5146
-#EXTINF:-1 tvg-name="睛彩" group-title="广东省级频道",睛彩
 rtp://239.77.1.20:5146
+#EXTINF:-1 tvg-name="睛彩" group-title="广东省级频道",睛彩
+rtp://239.77.1.21:5146
 #EXTINF:-1 tvg-name="经济科教" group-title="广东省级频道",经济科教
 rtp://239.77.0.85:5146
 #EXTINF:-1 tvg-name="经济科教" group-title="广东省级频道",经济科教
@@ -602,9 +602,9 @@ rtp://239.77.0.105:5146
 #EXTINF:-1 tvg-name="IPTV爱大剧" group-title="IPTV主题频道",IPTV爱大剧
 rtp://239.77.1.82:5146
 #EXTINF:-1 tvg-name="IPTV爱电影" group-title="IPTV主题频道",IPTV爱电影
-rtp://239.77.1.138:5146
-#EXTINF:-1 tvg-name="IPTV爱电影" group-title="IPTV主题频道",IPTV爱电影
 rtp://239.77.0.103:5146
+#EXTINF:-1 tvg-name="IPTV爱电影" group-title="IPTV主题频道",IPTV爱电影
+rtp://239.77.1.138:5146
 #EXTINF:-1 tvg-name="IPTV爱综艺" group-title="IPTV主题频道",IPTV爱综艺
 rtp://239.77.0.107:5146
 #EXTINF:-1 tvg-name="IPTV相声小品" group-title="IPTV主题频道",IPTV相声小品

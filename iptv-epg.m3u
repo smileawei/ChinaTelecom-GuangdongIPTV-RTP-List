@@ -34,7 +34,7 @@ rtp://239.77.1.161:5146
 #EXTINF:-1 tvg-name="CCTV-15" group-title="CCTV",CCTV15
 rtp://239.77.1.120:5146
 #EXTINF:-1 tvg-name="CCTV-16" group-title="CCTV",CCTV16
-rtp://239.77.0.18:5146
+rtp://239.77.0.218:5146
 #EXTINF:-1 tvg-name="CCTV-17" group-title="CCTV",CCTV17
 rtp://239.77.1.121:5146
 #EXTINF:-1 tvg-name="世界地理" group-title="CCTV",世界地理
@@ -78,7 +78,7 @@ rtp://239.77.0.59:5146
 #EXTINF:-1 tvg-name="北京卫视" group-title="各省卫视",北京卫视
 rtp://239.77.0.3:5146
 #EXTINF:-1 tvg-name="广东卫视" group-title="各省卫视",广东卫视
-rtp://239.77.0.65:5146
+rtp://239.77.0.66:5146
 #EXTINF:-1 tvg-name="深圳卫视" group-title="各省卫视",深圳卫视
 rtp://239.77.1.14:5146
 #EXTINF:-1 tvg-name="山东卫视" group-title="各省卫视",山东卫视
@@ -118,7 +118,7 @@ rtp://239.77.0.230:5146
 #EXTINF:-1 tvg-name="甘肃卫视" group-title="各省卫视",甘肃卫视
 rtp://239.77.0.189:5146
 #EXTINF:-1 tvg-name="吉林卫视" group-title="各省卫视",吉林卫视
-rtp://239.77.0.150:5146
+rtp://239.77.1.111:5146
 #EXTINF:-1 tvg-name="海南卫视" group-title="各省卫视",海南卫视
 rtp://239.253.43.101:5146
 #EXTINF:-1 tvg-name="新疆卫视" group-title="各省卫视",新疆卫视
