@@ -94,9 +94,9 @@ rtp://239.77.0.60:5146
 #EXTINF:-1 tvg-name="湖北卫视" group-title="各省卫视",湖北卫视
 rtp://239.77.1.174:5146
 #EXTINF:-1 tvg-name="安徽卫视" group-title="各省卫视",安徽卫视
-rtp://239.77.0.183:5146
+rtp://239.77.1.92:5146
 #EXTINF:-1 tvg-name="天津卫视" group-title="各省卫视",天津卫视
-rtp://239.77.1.182:5146
+rtp://239.77.0.97:5146
 #EXTINF:-1 tvg-name="辽宁卫视" group-title="各省卫视",辽宁卫视
 rtp://239.77.0.123:5146
 #EXTINF:-1 tvg-name="重庆卫视" group-title="各省卫视",重庆卫视
@@ -124,9 +124,9 @@ rtp://239.77.0.230:5146
 #EXTINF:-1 tvg-name="甘肃卫视" group-title="各省卫视",甘肃卫视
 rtp://239.77.0.189:5146
 #EXTINF:-1 tvg-name="吉林卫视" group-title="各省卫视",吉林卫视
-rtp://239.77.1.111:5146
+rtp://239.77.0.150:5146
 #EXTINF:-1 tvg-name="海南卫视" group-title="各省卫视",海南卫视
-rtp://239.253.43.101:5146
+rtp://239.253.43.35:5146
 #EXTINF:-1 tvg-name="新疆卫视" group-title="各省卫视",新疆卫视
 rtp://239.77.0.47:5146
 #EXTINF:-1 tvg-name="西藏卫视" group-title="各省卫视",西藏卫视
@@ -150,9 +150,9 @@ rtp://239.77.0.96:5146
 #EXTINF:-1 tvg-name="深圳少儿频道" group-title="深圳频道",深圳少儿频道
 rtp://239.77.1.244:5146
 #EXTINF:-1 tvg-name="深圳电视剧频道" group-title="深圳频道",深圳电视剧频道
-rtp://239.77.1.125:5146
+rtp://239.77.1.177:5146
 #EXTINF:-1 tvg-name="深圳都市频道" group-title="深圳频道",深圳都市频道
-rtp://239.77.1.176:5146
+rtp://239.77.1.124:5146
 #EXTINF:-1 tvg-name="深圳龙岗频道" group-title="深圳频道",深圳龙岗频道
 rtp://239.77.1.223:5146
 #EXTINF:-1 tvg-name="深圳移动电视" group-title="深圳频道",深圳移动电视
