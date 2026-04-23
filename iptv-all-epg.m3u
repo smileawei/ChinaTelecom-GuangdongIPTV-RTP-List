@@ -102,15 +102,15 @@ rtp://239.77.1.239:5146
 #EXTINF:-1 tvg-name="CCTV-15" group-title="CCTV",CCTV15
 rtp://239.77.0.44:5146
 #EXTINF:-1 tvg-name="CCTV-16" group-title="CCTV",CCTV16
+rtp://239.77.0.218:5146
+#EXTINF:-1 tvg-name="CCTV-16" group-title="CCTV",CCTV16
 rtp://239.77.0.18:5146
 #EXTINF:-1 tvg-name="CCTV-16" group-title="CCTV",CCTV16
 rtp://239.77.0.165:5146
-#EXTINF:-1 tvg-name="CCTV-16" group-title="CCTV",CCTV16
-rtp://239.77.0.218:5146
-#EXTINF:-1 tvg-name="CCTV-17" group-title="CCTV",CCTV17
-rtp://239.77.1.121:5146
 #EXTINF:-1 tvg-name="CCTV-17" group-title="CCTV",CCTV17
 rtp://239.77.0.198:5146
+#EXTINF:-1 tvg-name="CCTV-17" group-title="CCTV",CCTV17
+rtp://239.77.1.121:5146
 #EXTINF:-1 tvg-name="CCTV-17" group-title="CCTV",CCTV17
 rtp://239.77.0.115:5146
 #EXTINF:-1 tvg-name="世界地理" group-title="CCTV",世界地理
@@ -148,9 +148,9 @@ rtp://239.253.43.10:5146
 #EXTINF:-1 tvg-name="电视指南" group-title="CCTV",电视指南
 rtp://239.253.43.19:5146
 #EXTINF:-1 tvg-name="第一剧场" group-title="CCTV",第一剧场
-rtp://239.253.43.15:5146
-#EXTINF:-1 tvg-name="第一剧场" group-title="CCTV",第一剧场
 rtp://239.253.43.28:5146
+#EXTINF:-1 tvg-name="第一剧场" group-title="CCTV",第一剧场
+rtp://239.253.43.15:5146
 #EXTINF:-1 tvg-name="老故事" group-title="CCTV",老故事
 rtp://239.77.0.220:5146
 #EXTINF:-1 tvg-name="老故事" group-title="CCTV",老故事
@@ -168,9 +168,9 @@ rtp://239.253.43.6:5146
 #EXTINF:-1 tvg-name="风云音乐" group-title="CCTV",风云音乐
 rtp://239.253.43.29:5146
 #EXTINF:-1 tvg-name="高尔夫网球" group-title="CCTV",高尔夫网球
-rtp://239.253.43.22:5146
-#EXTINF:-1 tvg-name="高尔夫网球" group-title="CCTV",高尔夫网球
 rtp://239.253.43.12:5146
+#EXTINF:-1 tvg-name="高尔夫网球" group-title="CCTV",高尔夫网球
+rtp://239.253.43.22:5146
 #EXTINF:-1 tvg-name="湖南卫视" group-title="各省卫视",湖南卫视
 rtp://239.77.0.56:5146
 #EXTINF:-1 tvg-name="湖南卫视" group-title="各省卫视",湖南卫视
@@ -190,9 +190,9 @@ rtp://239.77.1.33:5146
 #EXTINF:-1 tvg-name="江苏卫视" group-title="各省卫视",江苏卫视
 rtp://239.77.0.57:5146
 #EXTINF:-1 tvg-name="江苏卫视" group-title="各省卫视",江苏卫视
-rtp://239.77.0.7:5146
-#EXTINF:-1 tvg-name="江苏卫视" group-title="各省卫视",江苏卫视
 rtp://239.77.0.90:5146
+#EXTINF:-1 tvg-name="江苏卫视" group-title="各省卫视",江苏卫视
+rtp://239.77.0.7:5146
 #EXTINF:-1 tvg-name="江苏卫视" group-title="各省卫视",江苏卫视
 rtp://239.77.1.18:5146
 #EXTINF:-1 tvg-name="东方卫视" group-title="各省卫视",东方卫视
@@ -244,9 +244,9 @@ rtp://239.77.0.130:5146
 #EXTINF:-1 tvg-name="深圳卫视" group-title="各省卫视",深圳卫视
 rtp://239.77.0.92:5146
 #EXTINF:-1 tvg-name="深圳卫视" group-title="各省卫视",深圳卫视
-rtp://239.77.1.3:5146
-#EXTINF:-1 tvg-name="深圳卫视" group-title="各省卫视",深圳卫视
 rtp://239.77.0.9:5146
+#EXTINF:-1 tvg-name="深圳卫视" group-title="各省卫视",深圳卫视
+rtp://239.77.1.3:5146
 #EXTINF:-1 tvg-name="深圳卫视" group-title="各省卫视",深圳卫视
 rtp://239.77.1.189:5146
 #EXTINF:-1 tvg-name="深圳卫视" group-title="各省卫视",深圳卫视
@@ -302,9 +302,9 @@ rtp://239.77.1.179:5146
 #EXTINF:-1 tvg-name="黑龙江卫视" group-title="各省卫视",黑龙江卫视
 rtp://239.77.0.124:5146
 #EXTINF:-1 tvg-name="黑龙江卫视" group-title="各省卫视",黑龙江卫视
-rtp://239.77.1.6:5146
-#EXTINF:-1 tvg-name="黑龙江卫视" group-title="各省卫视",黑龙江卫视
 rtp://239.77.0.93:5146
+#EXTINF:-1 tvg-name="黑龙江卫视" group-title="各省卫视",黑龙江卫视
+rtp://239.77.1.6:5146
 #EXTINF:-1 tvg-name="河南卫视" group-title="各省卫视",河南卫视
 rtp://239.77.0.17:5146
 #EXTINF:-1 tvg-name="河南卫视" group-title="各省卫视",河南卫视
