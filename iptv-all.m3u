@@ -90,9 +90,9 @@ rtp://239.77.0.42:5146
 #EXTINF:-1 tvg-name="CCTV-14" group-title="CCTV",CCTV14
 rtp://239.77.1.161:5146
 #EXTINF:-1 tvg-name="CCTV-14" group-title="CCTV",CCTV14
-rtp://239.77.1.171:5146
-#EXTINF:-1 tvg-name="CCTV-14" group-title="CCTV",CCTV14
 rtp://239.77.0.133:5146
+#EXTINF:-1 tvg-name="CCTV-14" group-title="CCTV",CCTV14
+rtp://239.77.1.171:5146
 #EXTINF:-1 tvg-name="CCTV-14" group-title="CCTV",CCTV14
 rtp://239.77.0.43:5146
 #EXTINF:-1 tvg-name="CCTV-15" group-title="CCTV",CCTV15
@@ -102,9 +102,9 @@ rtp://239.77.1.239:5146
 #EXTINF:-1 tvg-name="CCTV-15" group-title="CCTV",CCTV15
 rtp://239.77.0.44:5146
 #EXTINF:-1 tvg-name="CCTV-16" group-title="CCTV",CCTV16
-rtp://239.77.0.218:5146
-#EXTINF:-1 tvg-name="CCTV-16" group-title="CCTV",CCTV16
 rtp://239.77.0.18:5146
+#EXTINF:-1 tvg-name="CCTV-16" group-title="CCTV",CCTV16
+rtp://239.77.0.218:5146
 #EXTINF:-1 tvg-name="CCTV-16" group-title="CCTV",CCTV16
 rtp://239.77.0.165:5146
 #EXTINF:-1 tvg-name="CCTV-17" group-title="CCTV",CCTV17
@@ -120,9 +120,9 @@ rtp://239.253.43.24:5146
 #EXTINF:-1 tvg-name="中国天气" group-title="CCTV",中国天气
 rtp://239.77.1.2:5146
 #EXTINF:-1 tvg-name="兵器科技" group-title="CCTV",兵器科技
-rtp://239.253.43.9:5146
-#EXTINF:-1 tvg-name="兵器科技" group-title="CCTV",兵器科技
 rtp://239.253.43.18:5146
+#EXTINF:-1 tvg-name="兵器科技" group-title="CCTV",兵器科技
+rtp://239.253.43.9:5146
 #EXTINF:-1 tvg-name="卫生健康" group-title="CCTV",卫生健康
 rtp://239.77.0.212:5146
 #EXTINF:-1 tvg-name="发现之旅" group-title="CCTV",发现之旅
@@ -138,9 +138,9 @@ rtp://239.253.43.13:5146
 #EXTINF:-1 tvg-name="央视精品" group-title="CCTV",央视精品
 rtp://239.253.43.27:5146
 #EXTINF:-1 tvg-name="女性时尚" group-title="CCTV",女性时尚
-rtp://239.253.43.23:5146
-#EXTINF:-1 tvg-name="女性时尚" group-title="CCTV",女性时尚
 rtp://239.253.43.8:5146
+#EXTINF:-1 tvg-name="女性时尚" group-title="CCTV",女性时尚
+rtp://239.253.43.23:5146
 #EXTINF:-1 tvg-name="怀旧剧场" group-title="CCTV",怀旧剧场
 rtp://239.253.43.5:5146
 #EXTINF:-1 tvg-name="怀旧剧场" group-title="CCTV",怀旧剧场
@@ -156,9 +156,9 @@ rtp://239.253.43.10:5146
 #EXTINF:-1 tvg-name="电视指南" group-title="CCTV",电视指南
 rtp://239.253.43.19:5146
 #EXTINF:-1 tvg-name="第一剧场" group-title="CCTV",第一剧场
-rtp://239.253.43.28:5146
-#EXTINF:-1 tvg-name="第一剧场" group-title="CCTV",第一剧场
 rtp://239.253.43.15:5146
+#EXTINF:-1 tvg-name="第一剧场" group-title="CCTV",第一剧场
+rtp://239.253.43.28:5146
 #EXTINF:-1 tvg-name="老故事" group-title="CCTV",老故事
 rtp://239.77.0.220:5146
 #EXTINF:-1 tvg-name="老故事" group-title="CCTV",老故事
@@ -354,9 +354,9 @@ rtp://239.77.0.150:5146
 #EXTINF:-1 tvg-name="吉林卫视" group-title="各省卫视",吉林卫视
 rtp://239.77.1.111:5146
 #EXTINF:-1 tvg-name="海南卫视" group-title="各省卫视",海南卫视
-rtp://239.253.43.101:5146
-#EXTINF:-1 tvg-name="海南卫视" group-title="各省卫视",海南卫视
 rtp://239.253.43.35:5146
+#EXTINF:-1 tvg-name="海南卫视" group-title="各省卫视",海南卫视
+rtp://239.253.43.101:5146
 #EXTINF:-1 tvg-name="新疆卫视" group-title="各省卫视",新疆卫视
 rtp://239.77.0.47:5146
 #EXTINF:-1 tvg-name="新疆卫视" group-title="各省卫视",新疆卫视
@@ -406,9 +406,9 @@ rtp://239.77.0.96:5146
 #EXTINF:-1 tvg-name="深圳少儿频道" group-title="深圳频道",深圳少儿频道
 rtp://239.77.1.244:5146
 #EXTINF:-1 tvg-name="深圳电视剧频道" group-title="深圳频道",深圳电视剧频道
-rtp://239.77.1.125:5146
-#EXTINF:-1 tvg-name="深圳电视剧频道" group-title="深圳频道",深圳电视剧频道
 rtp://239.77.1.177:5146
+#EXTINF:-1 tvg-name="深圳电视剧频道" group-title="深圳频道",深圳电视剧频道
+rtp://239.77.1.125:5146
 #EXTINF:-1 tvg-name="深圳都市频道" group-title="深圳频道",深圳都市频道
 rtp://239.77.1.176:5146
 #EXTINF:-1 tvg-name="深圳都市频道" group-title="深圳频道",深圳都市频道
@@ -420,9 +420,9 @@ rtp://239.77.1.175:5146
 #EXTINF:-1 tvg-name="广东" group-title="广东省级频道",广东
 rtp://239.77.0.244:5146
 #EXTINF:-1 tvg-name="广东" group-title="广东省级频道",广东
-rtp://239.77.1.237:5146
-#EXTINF:-1 tvg-name="广东" group-title="广东省级频道",广东
 rtp://239.77.0.245:5146
+#EXTINF:-1 tvg-name="广东" group-title="广东省级频道",广东
+rtp://239.77.1.237:5146
 #EXTINF:-1 tvg-name="嘉佳卡通" group-title="广东省级频道",嘉佳卡通
 rtp://239.77.0.179:5146
 #EXTINF:-1 tvg-name="嘉佳卡通" group-title="广东省级频道",嘉佳卡通
@@ -586,9 +586,9 @@ rtp://239.77.0.108:5146
 #EXTINF:-1 tvg-name="IPTV爱体育" group-title="IPTV主题频道",IPTV爱体育
 rtp://239.77.0.176:5146
 #EXTINF:-1 tvg-name="IPTV爱大剧" group-title="IPTV主题频道",IPTV爱大剧
-rtp://239.77.1.82:5146
-#EXTINF:-1 tvg-name="IPTV爱大剧" group-title="IPTV主题频道",IPTV爱大剧
 rtp://239.77.0.105:5146
+#EXTINF:-1 tvg-name="IPTV爱大剧" group-title="IPTV主题频道",IPTV爱大剧
+rtp://239.77.1.82:5146
 #EXTINF:-1 tvg-name="IPTV爱电影" group-title="IPTV主题频道",IPTV爱电影
 rtp://239.77.0.103:5146
 #EXTINF:-1 tvg-name="IPTV爱电影" group-title="IPTV主题频道",IPTV爱电影

@@ -34,7 +34,7 @@ rtp://239.77.1.161:5146
 #EXTINF:-1 tvg-name="CCTV-15" group-title="CCTV",CCTV15
 rtp://239.77.1.120:5146
 #EXTINF:-1 tvg-name="CCTV-16" group-title="CCTV",CCTV16
-rtp://239.77.0.218:5146
+rtp://239.77.0.18:5146
 #EXTINF:-1 tvg-name="CCTV-17" group-title="CCTV",CCTV17
 rtp://239.77.1.121:5146
 #EXTINF:-1 tvg-name="世界地理" group-title="CCTV",世界地理
@@ -42,7 +42,7 @@ rtp://239.253.43.7:5146
 #EXTINF:-1 tvg-name="中国天气" group-title="CCTV",中国天气
 rtp://239.77.1.2:5146
 #EXTINF:-1 tvg-name="兵器科技" group-title="CCTV",兵器科技
-rtp://239.253.43.9:5146
+rtp://239.253.43.18:5146
 #EXTINF:-1 tvg-name="卫生健康" group-title="CCTV",卫生健康
 rtp://239.77.0.212:5146
 #EXTINF:-1 tvg-name="发现之旅" group-title="CCTV",发现之旅
@@ -54,7 +54,7 @@ rtp://239.253.43.13:5146
 #EXTINF:-1 tvg-name="央视精品" group-title="CCTV",央视精品
 rtp://239.253.43.27:5146
 #EXTINF:-1 tvg-name="女性时尚" group-title="CCTV",女性时尚
-rtp://239.253.43.23:5146
+rtp://239.253.43.8:5146
 #EXTINF:-1 tvg-name="怀旧剧场" group-title="CCTV",怀旧剧场
 rtp://239.253.43.5:5146
 #EXTINF:-1 tvg-name="早期教育" group-title="CCTV",早期教育
@@ -62,7 +62,7 @@ rtp://239.77.1.122:5146
 #EXTINF:-1 tvg-name="电视指南" group-title="CCTV",电视指南
 rtp://239.253.43.10:5146
 #EXTINF:-1 tvg-name="第一剧场" group-title="CCTV",第一剧场
-rtp://239.253.43.28:5146
+rtp://239.253.43.15:5146
 #EXTINF:-1 tvg-name="老故事" group-title="CCTV",老故事
 rtp://239.77.0.220:5146
 #EXTINF:-1 tvg-name="风云剧场" group-title="CCTV",风云剧场
@@ -126,7 +126,7 @@ rtp://239.77.0.189:5146
 #EXTINF:-1 tvg-name="吉林卫视" group-title="各省卫视",吉林卫视
 rtp://239.77.0.150:5146
 #EXTINF:-1 tvg-name="海南卫视" group-title="各省卫视",海南卫视
-rtp://239.253.43.101:5146
+rtp://239.253.43.35:5146
 #EXTINF:-1 tvg-name="新疆卫视" group-title="各省卫视",新疆卫视
 rtp://239.77.0.47:5146
 #EXTINF:-1 tvg-name="西藏卫视" group-title="各省卫视",西藏卫视
@@ -150,7 +150,7 @@ rtp://239.77.0.96:5146
 #EXTINF:-1 tvg-name="深圳少儿频道" group-title="深圳频道",深圳少儿频道
 rtp://239.77.1.244:5146
 #EXTINF:-1 tvg-name="深圳电视剧频道" group-title="深圳频道",深圳电视剧频道
-rtp://239.77.1.125:5146
+rtp://239.77.1.177:5146
 #EXTINF:-1 tvg-name="深圳都市频道" group-title="深圳频道",深圳都市频道
 rtp://239.77.1.176:5146
 #EXTINF:-1 tvg-name="深圳龙岗频道" group-title="深圳频道",深圳龙岗频道
@@ -284,7 +284,7 @@ rtp://239.77.0.106:5146
 #EXTINF:-1 tvg-name="IPTV爱体育" group-title="IPTV主题频道",IPTV爱体育
 rtp://239.77.1.116:5146
 #EXTINF:-1 tvg-name="IPTV爱大剧" group-title="IPTV主题频道",IPTV爱大剧
-rtp://239.77.1.82:5146
+rtp://239.77.0.105:5146
 #EXTINF:-1 tvg-name="IPTV爱电影" group-title="IPTV主题频道",IPTV爱电影
 rtp://239.77.0.103:5146
 #EXTINF:-1 tvg-name="IPTV爱综艺" group-title="IPTV主题频道",IPTV爱综艺

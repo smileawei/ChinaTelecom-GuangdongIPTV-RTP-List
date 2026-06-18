@@ -34,13 +34,13 @@ rtp://239.77.1.161:5146
 #EXTINF:-1 tvg-name="CCTV-15" group-title="CCTV",CCTV15
 rtp://239.77.1.120:5146
 #EXTINF:-1 tvg-name="CCTV-16" group-title="CCTV",CCTV16
-rtp://239.77.0.218:5146
+rtp://239.77.0.18:5146
 #EXTINF:-1 tvg-name="CCTV-17" group-title="CCTV",CCTV17
 rtp://239.77.1.121:5146
 #EXTINF:-1 tvg-name="世界地理" group-title="CCTV",世界地理
 rtp://239.253.43.7:5146
 #EXTINF:-1 tvg-name="兵器科技" group-title="CCTV",兵器科技
-rtp://239.253.43.9:5146
+rtp://239.253.43.18:5146
 #EXTINF:-1 tvg-name="卫生健康" group-title="CCTV",卫生健康
 rtp://239.77.0.212:5146
 #EXTINF:-1 tvg-name="央视台球" group-title="CCTV",央视台球
@@ -48,7 +48,7 @@ rtp://239.253.43.11:5146
 #EXTINF:-1 tvg-name="央视文化精品" group-title="CCTV",央视文化精品
 rtp://239.253.43.13:5146
 #EXTINF:-1 tvg-name="女性时尚" group-title="CCTV",女性时尚
-rtp://239.253.43.23:5146
+rtp://239.253.43.8:5146
 #EXTINF:-1 tvg-name="怀旧剧场" group-title="CCTV",怀旧剧场
 rtp://239.253.43.5:5146
 #EXTINF:-1 tvg-name="早期教育" group-title="CCTV",早期教育
@@ -56,7 +56,7 @@ rtp://239.77.1.122:5146
 #EXTINF:-1 tvg-name="电视指南" group-title="CCTV",电视指南
 rtp://239.253.43.10:5146
 #EXTINF:-1 tvg-name="第一剧场" group-title="CCTV",第一剧场
-rtp://239.253.43.28:5146
+rtp://239.253.43.15:5146
 #EXTINF:-1 tvg-name="老故事" group-title="CCTV",老故事
 rtp://239.77.0.220:5146
 #EXTINF:-1 tvg-name="风云剧场" group-title="CCTV",风云剧场
@@ -120,7 +120,7 @@ rtp://239.77.0.189:5146
 #EXTINF:-1 tvg-name="吉林卫视" group-title="各省卫视",吉林卫视
 rtp://239.77.0.150:5146
 #EXTINF:-1 tvg-name="海南卫视" group-title="各省卫视",海南卫视
-rtp://239.253.43.101:5146
+rtp://239.253.43.35:5146
 #EXTINF:-1 tvg-name="新疆卫视" group-title="各省卫视",新疆卫视
 rtp://239.77.0.47:5146
 #EXTINF:-1 tvg-name="西藏卫视" group-title="各省卫视",西藏卫视
@@ -131,6 +131,8 @@ rtp://239.253.43.125:5146
 rtp://239.77.0.49:5146
 #EXTINF:-1 tvg-name="兵团卫视" group-title="各省卫视",兵团卫视
 rtp://239.77.0.48:5146
+#EXTINF:-1 tvg-name="大湾区卫视" group-title="各省卫视",大湾区卫视
+rtp://239.77.0.215:5146
 #EXTINF:-1 tvg-name="三沙卫视" group-title="各省卫视",三沙卫视
 rtp://239.253.43.113:5146
 #EXTINF:-1 tvg-name="山西卫视" group-title="各省卫视",山西卫视
