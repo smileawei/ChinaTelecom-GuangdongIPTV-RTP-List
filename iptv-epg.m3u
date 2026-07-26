@@ -1,1 +1,169 @@
 #EXTM3U x-tvg-url="https://warp.rm.do/iptv/epg.xml" name="广东电信IPTV可用频道(EPG)"
+#EXTINF:-1 tvg-name="CCTV-1" group-title="CCTV",CCTV1
+rtp://239.77.1.17:5146
+#EXTINF:-1 tvg-name="CCTV-2" group-title="CCTV",CCTV2
+rtp://239.77.1.158:5146
+#EXTINF:-1 tvg-name="CCTV-3" group-title="CCTV",CCTV3
+rtp://239.77.0.169:5146
+#EXTINF:-1 tvg-name="CCTV-4" group-title="CCTV",CCTV4
+rtp://239.77.1.166:5146
+#EXTINF:-1 tvg-name="CCTV-4K" group-title="CCTV",CCTV4K
+rtp://239.77.1.180:5146
+#EXTINF:-1 tvg-name="CCTV-5" group-title="CCTV",CCTV5
+rtp://239.77.0.170:5146
+#EXTINF:-1 tvg-name="CCTV-5+" group-title="CCTV",CCTV5+
+rtp://239.77.0.87:5146
+#EXTINF:-1 tvg-name="CCTV-6" group-title="CCTV",CCTV6
+rtp://239.77.0.171:5146
+#EXTINF:-1 tvg-name="CCTV-7" group-title="CCTV",CCTV7
+rtp://239.77.1.159:5146
+#EXTINF:-1 tvg-name="CCTV-8" group-title="CCTV",CCTV8
+rtp://239.77.0.172:5146
+#EXTINF:-1 tvg-name="CCTV-9" group-title="CCTV",CCTV9
+rtp://239.77.1.160:5146
+#EXTINF:-1 tvg-name="CCTV-10" group-title="CCTV",CCTV10
+rtp://239.77.1.113:5146
+#EXTINF:-1 tvg-name="CCTV-11" group-title="CCTV",CCTV11
+rtp://239.77.1.108:5146
+#EXTINF:-1 tvg-name="CCTV-12" group-title="CCTV",CCTV12
+rtp://239.77.1.109:5146
+#EXTINF:-1 tvg-name="CCTV-13" group-title="CCTV",CCTV13
+rtp://239.253.43.196:5146
+#EXTINF:-1 tvg-name="CCTV-14" group-title="CCTV",CCTV14
+rtp://239.77.1.161:5146
+#EXTINF:-1 tvg-name="CCTV-15" group-title="CCTV",CCTV15
+rtp://239.77.1.120:5146
+#EXTINF:-1 tvg-name="CCTV-16" group-title="CCTV",CCTV16
+rtp://239.77.0.218:5146
+#EXTINF:-1 tvg-name="CCTV-17" group-title="CCTV",CCTV17
+rtp://239.77.1.121:5146
+#EXTINF:-1 tvg-name="世界地理" group-title="CCTV",世界地理
+rtp://239.253.43.7:5146
+#EXTINF:-1 tvg-name="兵器科技" group-title="CCTV",兵器科技
+rtp://239.253.43.9:5146
+#EXTINF:-1 tvg-name="卫生健康" group-title="CCTV",卫生健康
+rtp://239.77.0.212:5146
+#EXTINF:-1 tvg-name="央视台球" group-title="CCTV",央视台球
+rtp://239.253.43.11:5146
+#EXTINF:-1 tvg-name="央视文化精品" group-title="CCTV",央视文化精品
+rtp://239.253.43.13:5146
+#EXTINF:-1 tvg-name="女性时尚" group-title="CCTV",女性时尚
+rtp://239.253.43.8:5146
+#EXTINF:-1 tvg-name="怀旧剧场" group-title="CCTV",怀旧剧场
+rtp://239.253.43.5:5146
+#EXTINF:-1 tvg-name="早期教育" group-title="CCTV",早期教育
+rtp://239.77.1.122:5146
+#EXTINF:-1 tvg-name="电视指南" group-title="CCTV",电视指南
+rtp://239.253.43.10:5146
+#EXTINF:-1 tvg-name="第一剧场" group-title="CCTV",第一剧场
+rtp://239.253.43.15:5146
+#EXTINF:-1 tvg-name="老故事" group-title="CCTV",老故事
+rtp://239.77.0.220:5146
+#EXTINF:-1 tvg-name="风云剧场" group-title="CCTV",风云剧场
+rtp://239.253.43.16:5146
+#EXTINF:-1 tvg-name="风云足球" group-title="CCTV",风云足球
+rtp://239.253.43.14:5146
+#EXTINF:-1 tvg-name="风云音乐" group-title="CCTV",风云音乐
+rtp://239.253.43.6:5146
+#EXTINF:-1 tvg-name="高尔夫网球" group-title="CCTV",高尔夫网球
+rtp://239.253.43.12:5146
+#EXTINF:-1 tvg-name="湖南卫视" group-title="各省卫视",湖南卫视
+rtp://239.77.0.56:5146
+#EXTINF:-1 tvg-name="浙江卫视" group-title="各省卫视",浙江卫视
+rtp://239.77.0.58:5146
+#EXTINF:-1 tvg-name="江苏卫视" group-title="各省卫视",江苏卫视
+rtp://239.77.0.57:5146
+#EXTINF:-1 tvg-name="东方卫视" group-title="各省卫视",东方卫视
+rtp://239.77.0.59:5146
+#EXTINF:-1 tvg-name="北京卫视" group-title="各省卫视",北京卫视
+rtp://239.77.0.3:5146
+#EXTINF:-1 tvg-name="深圳卫视" group-title="各省卫视",深圳卫视
+rtp://239.77.1.14:5146
+#EXTINF:-1 tvg-name="山东卫视" group-title="各省卫视",山东卫视
+rtp://239.77.0.61:5146
+#EXTINF:-1 tvg-name="四川卫视" group-title="各省卫视",四川卫视
+rtp://239.77.0.60:5146
+#EXTINF:-1 tvg-name="湖北卫视" group-title="各省卫视",湖北卫视
+rtp://239.77.1.174:5146
+#EXTINF:-1 tvg-name="安徽卫视" group-title="各省卫视",安徽卫视
+rtp://239.77.0.183:5146
+#EXTINF:-1 tvg-name="天津卫视" group-title="各省卫视",天津卫视
+rtp://239.77.0.97:5146
+#EXTINF:-1 tvg-name="辽宁卫视" group-title="各省卫视",辽宁卫视
+rtp://239.77.0.123:5146
+#EXTINF:-1 tvg-name="重庆卫视" group-title="各省卫视",重庆卫视
+rtp://239.77.0.182:5146
+#EXTINF:-1 tvg-name="江西卫视" group-title="各省卫视",江西卫视
+rtp://239.77.0.149:5146
+#EXTINF:-1 tvg-name="黑龙江卫视" group-title="各省卫视",黑龙江卫视
+rtp://239.77.1.179:5146
+#EXTINF:-1 tvg-name="河南卫视" group-title="各省卫视",河南卫视
+rtp://239.77.0.17:5146
+#EXTINF:-1 tvg-name="河北卫视" group-title="各省卫视",河北卫视
+rtp://239.77.0.148:5146
+#EXTINF:-1 tvg-name="内蒙古卫视" group-title="各省卫视",内蒙古卫视
+rtp://239.77.0.16:5146
+#EXTINF:-1 tvg-name="陕西卫视" group-title="各省卫视",陕西卫视
+rtp://239.77.0.13:5146
+#EXTINF:-1 tvg-name="广西卫视" group-title="各省卫视",广西卫视
+rtp://239.77.0.139:5146
+#EXTINF:-1 tvg-name="东南卫视" group-title="各省卫视",东南卫视
+rtp://239.77.0.146:5146
+#EXTINF:-1 tvg-name="云南卫视" group-title="各省卫视",云南卫视
+rtp://239.253.43.100:5146
+#EXTINF:-1 tvg-name="贵州卫视" group-title="各省卫视",贵州卫视
+rtp://239.77.0.230:5146
+#EXTINF:-1 tvg-name="甘肃卫视" group-title="各省卫视",甘肃卫视
+rtp://239.77.0.189:5146
+#EXTINF:-1 tvg-name="吉林卫视" group-title="各省卫视",吉林卫视
+rtp://239.77.0.150:5146
+#EXTINF:-1 tvg-name="海南卫视" group-title="各省卫视",海南卫视
+rtp://239.253.43.35:5146
+#EXTINF:-1 tvg-name="新疆卫视" group-title="各省卫视",新疆卫视
+rtp://239.77.0.47:5146
+#EXTINF:-1 tvg-name="西藏卫视" group-title="各省卫视",西藏卫视
+rtp://239.77.0.46:5146
+#EXTINF:-1 tvg-name="青海卫视" group-title="各省卫视",青海卫视
+rtp://239.253.43.125:5146
+#EXTINF:-1 tvg-name="宁夏卫视" group-title="各省卫视",宁夏卫视
+rtp://239.77.0.49:5146
+#EXTINF:-1 tvg-name="兵团卫视" group-title="各省卫视",兵团卫视
+rtp://239.77.0.48:5146
+#EXTINF:-1 tvg-name="三沙卫视" group-title="各省卫视",三沙卫视
+rtp://239.253.43.113:5146
+#EXTINF:-1 tvg-name="山西卫视" group-title="各省卫视",山西卫视
+rtp://239.77.0.69:5146
+#EXTINF:-1 tvg-name="大湾区卫视" group-title="各省卫视",大湾区卫视
+rtp://239.77.1.12:5146
+#EXTINF:-1 tvg-name="延边卫视" group-title="各省卫视",延边卫视
+rtp://239.77.0.10:5146
+#EXTINF:-1 tvg-name="厦门卫视" group-title="各省卫视",厦门卫视
+rtp://239.77.0.96:5146
+#EXTINF:-1 tvg-name="嘉佳卡通" group-title="广东省级频道",嘉佳卡通
+rtp://239.77.0.179:5146
+#EXTINF:-1 tvg-name="CETV-1" group-title="省级和国家级频道",CETV1
+rtp://239.77.0.200:5146
+#EXTINF:-1 tvg-name="CETV4" group-title="省级和国家级频道",CETV4
+rtp://239.253.43.114:5146
+#EXTINF:-1 tvg-name="天元围棋" group-title="省级和国家级频道",天元围棋
+rtp://239.253.43.98:5146
+#EXTINF:-1 tvg-name="快乐垂钓" group-title="省级和国家级频道",快乐垂钓
+rtp://239.77.0.145:5146
+#EXTINF:-1 tvg-name="求索纪录" group-title="省级和国家级频道",求索纪录
+rtp://239.77.0.21:5146
+#EXTINF:-1 tvg-name="金鹰卡通" group-title="省级和国家级频道",金鹰卡通
+rtp://239.77.0.164:5146
+#EXTINF:-1 tvg-name="CETV-2" group-title="省级和国家级频道",CETV2
+rtp://239.77.0.28:5146
+#EXTINF:-1 tvg-name="书画" group-title="省级和国家级频道",书画
+rtp://239.77.1.115:5146
+#EXTINF:-1 tvg-name="山东教育" group-title="省级和国家级频道",山东教育
+rtp://239.77.0.83:5146
+#EXTINF:-1 tvg-name="中学生" group-title="其他",中学生
+rtp://239.77.1.195:5146
+#EXTINF:-1 tvg-name="国学" group-title="其他",国学
+rtp://239.77.0.226:5146
+#EXTINF:-1 tvg-name="汽摩" group-title="其他",汽摩
+rtp://239.77.0.209:5146
+#EXTINF:-1 tvg-name="环球奇观" group-title="其他",环球奇观
+rtp://239.253.43.126:5146
