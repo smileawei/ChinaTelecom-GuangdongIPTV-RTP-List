@@ -8,7 +8,7 @@ rtp://239.77.0.169:5146
 #EXTINF:-1 tvg-name="CCTV-4" group-title="CCTV",CCTV4
 rtp://239.77.1.166:5146
 #EXTINF:-1 tvg-name="CCTV-4K" group-title="CCTV",CCTV4K
-rtp://239.77.1.180:5146
+rtp://239.77.0.194:5146
 #EXTINF:-1 tvg-name="CCTV-5" group-title="CCTV",CCTV5
 rtp://239.77.0.170:5146
 #EXTINF:-1 tvg-name="CCTV-5+" group-title="CCTV",CCTV5+
@@ -34,7 +34,7 @@ rtp://239.77.1.161:5146
 #EXTINF:-1 tvg-name="CCTV-15" group-title="CCTV",CCTV15
 rtp://239.77.1.120:5146
 #EXTINF:-1 tvg-name="CCTV-16" group-title="CCTV",CCTV16
-rtp://239.77.0.218:5146
+rtp://239.77.0.18:5146
 #EXTINF:-1 tvg-name="CCTV-17" group-title="CCTV",CCTV17
 rtp://239.77.1.121:5146
 #EXTINF:-1 tvg-name="世界地理" group-title="CCTV",世界地理
@@ -42,7 +42,7 @@ rtp://239.253.43.7:5146
 #EXTINF:-1 tvg-name="中国天气" group-title="CCTV",中国天气
 rtp://239.77.1.2:5146
 #EXTINF:-1 tvg-name="兵器科技" group-title="CCTV",兵器科技
-rtp://239.253.43.18:5146
+rtp://239.253.43.9:5146
 #EXTINF:-1 tvg-name="卫生健康" group-title="CCTV",卫生健康
 rtp://239.77.0.212:5146
 #EXTINF:-1 tvg-name="发现之旅" group-title="CCTV",发现之旅
@@ -62,7 +62,7 @@ rtp://239.77.1.122:5146
 #EXTINF:-1 tvg-name="电视指南" group-title="CCTV",电视指南
 rtp://239.253.43.10:5146
 #EXTINF:-1 tvg-name="第一剧场" group-title="CCTV",第一剧场
-rtp://239.253.43.15:5146
+rtp://239.253.43.28:5146
 #EXTINF:-1 tvg-name="老故事" group-title="CCTV",老故事
 rtp://239.77.0.220:5146
 #EXTINF:-1 tvg-name="风云剧场" group-title="CCTV",风云剧场
@@ -84,7 +84,7 @@ rtp://239.77.0.59:5146
 #EXTINF:-1 tvg-name="北京卫视" group-title="各省卫视",北京卫视
 rtp://239.77.0.3:5146
 #EXTINF:-1 tvg-name="广东卫视" group-title="各省卫视",广东卫视
-rtp://239.77.0.65:5146
+rtp://239.77.0.66:5146
 #EXTINF:-1 tvg-name="深圳卫视" group-title="各省卫视",深圳卫视
 rtp://239.77.1.14:5146
 #EXTINF:-1 tvg-name="山东卫视" group-title="各省卫视",山东卫视
@@ -278,7 +278,7 @@ rtp://239.77.1.10:5146
 #EXTINF:-1 tvg-name="IPTV少儿动画" group-title="IPTV主题频道",IPTV少儿动画
 rtp://239.77.0.109:5146
 #EXTINF:-1 tvg-name="IPTV法治" group-title="IPTV主题频道",IPTV法治
-rtp://239.77.1.86:5146
+rtp://239.77.0.102:5146
 #EXTINF:-1 tvg-name="IPTV热播剧场" group-title="IPTV主题频道",IPTV热播剧场
 rtp://239.77.0.106:5146
 #EXTINF:-1 tvg-name="IPTV爱体育" group-title="IPTV主题频道",IPTV爱体育
