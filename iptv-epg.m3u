@@ -28,7 +28,7 @@ rtp://239.77.1.108:5146
 #EXTINF:-1 tvg-name="CCTV-12" group-title="CCTV",CCTV12
 rtp://239.77.1.109:5146
 #EXTINF:-1 tvg-name="CCTV-13" group-title="CCTV",CCTV13
-rtp://239.253.43.196:5146
+rtp://239.77.0.188:5146
 #EXTINF:-1 tvg-name="CCTV-14" group-title="CCTV",CCTV14
 rtp://239.77.1.161:5146
 #EXTINF:-1 tvg-name="CCTV-15" group-title="CCTV",CCTV15
@@ -63,6 +63,8 @@ rtp://239.77.0.220:5146
 rtp://239.253.43.16:5146
 #EXTINF:-1 tvg-name="风云足球" group-title="CCTV",风云足球
 rtp://239.253.43.14:5146
+#EXTINF:-1 tvg-name="风云音乐" group-title="CCTV",风云音乐
+rtp://239.253.43.6:5146
 #EXTINF:-1 tvg-name="高尔夫网球" group-title="CCTV",高尔夫网球
 rtp://239.253.43.12:5146
 #EXTINF:-1 tvg-name="湖南卫视" group-title="各省卫视",湖南卫视
@@ -76,7 +78,7 @@ rtp://239.77.0.59:5146
 #EXTINF:-1 tvg-name="北京卫视" group-title="各省卫视",北京卫视
 rtp://239.77.0.3:5146
 #EXTINF:-1 tvg-name="广东卫视" group-title="各省卫视",广东卫视
-rtp://239.77.0.66:5146
+rtp://239.77.0.65:5146
 #EXTINF:-1 tvg-name="深圳卫视" group-title="各省卫视",深圳卫视
 rtp://239.77.1.14:5146
 #EXTINF:-1 tvg-name="山东卫视" group-title="各省卫视",山东卫视
@@ -108,7 +110,7 @@ rtp://239.77.0.13:5146
 #EXTINF:-1 tvg-name="广西卫视" group-title="各省卫视",广西卫视
 rtp://239.77.0.139:5146
 #EXTINF:-1 tvg-name="东南卫视" group-title="各省卫视",东南卫视
-rtp://239.77.0.146:5146
+rtp://239.77.1.104:5146
 #EXTINF:-1 tvg-name="云南卫视" group-title="各省卫视",云南卫视
 rtp://239.253.43.100:5146
 #EXTINF:-1 tvg-name="贵州卫视" group-title="各省卫视",贵州卫视
@@ -118,7 +120,7 @@ rtp://239.77.0.189:5146
 #EXTINF:-1 tvg-name="吉林卫视" group-title="各省卫视",吉林卫视
 rtp://239.77.0.150:5146
 #EXTINF:-1 tvg-name="海南卫视" group-title="各省卫视",海南卫视
-rtp://239.253.43.101:5146
+rtp://239.253.43.35:5146
 #EXTINF:-1 tvg-name="新疆卫视" group-title="各省卫视",新疆卫视
 rtp://239.77.0.47:5146
 #EXTINF:-1 tvg-name="西藏卫视" group-title="各省卫视",西藏卫视
@@ -145,8 +147,6 @@ rtp://239.77.0.179:5146
 rtp://239.77.0.112:5146
 #EXTINF:-1 tvg-name="广东少儿" group-title="广东省级频道",广东少儿
 rtp://239.77.0.250:5146
-#EXTINF:-1 tvg-name="广东影视" group-title="广东省级频道",广东影视
-rtp://239.77.0.217:5146
 #EXTINF:-1 tvg-name="广东新闻" group-title="广东省级频道",广东新闻
 rtp://239.77.0.173:5146
 #EXTINF:-1 tvg-name="广东民生" group-title="广东省级频道",广东民生
