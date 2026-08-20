@@ -32,6 +32,8 @@ rtp://239.77.0.78:5146
 #EXTINF:-1 tvg-name="CCTV-4" group-title="CCTV",CCTV4
 rtp://239.77.0.33:5146
 #EXTINF:-1 tvg-name="CCTV-4K" group-title="CCTV",CCTV4K
+rtp://239.77.0.174:5146
+#EXTINF:-1 tvg-name="CCTV-4K" group-title="CCTV",CCTV4K
 rtp://239.77.0.194:5146
 #EXTINF:-1 tvg-name="CCTV-4K" group-title="CCTV",CCTV4K
 rtp://239.77.1.180:5146
@@ -82,17 +84,17 @@ rtp://239.77.0.136:5146
 #EXTINF:-1 tvg-name="CCTV-12" group-title="CCTV",CCTV12
 rtp://239.77.0.41:5146
 #EXTINF:-1 tvg-name="CCTV-13" group-title="CCTV",CCTV13
-rtp://239.77.0.188:5146
-#EXTINF:-1 tvg-name="CCTV-13" group-title="CCTV",CCTV13
 rtp://239.253.43.196:5146
+#EXTINF:-1 tvg-name="CCTV-13" group-title="CCTV",CCTV13
+rtp://239.77.0.188:5146
 #EXTINF:-1 tvg-name="CCTV-13" group-title="CCTV",CCTV13
 rtp://239.77.0.42:5146
 #EXTINF:-1 tvg-name="CCTV-14" group-title="CCTV",CCTV14
 rtp://239.77.1.161:5146
 #EXTINF:-1 tvg-name="CCTV-14" group-title="CCTV",CCTV14
-rtp://239.77.0.133:5146
-#EXTINF:-1 tvg-name="CCTV-14" group-title="CCTV",CCTV14
 rtp://239.77.1.171:5146
+#EXTINF:-1 tvg-name="CCTV-14" group-title="CCTV",CCTV14
+rtp://239.77.0.133:5146
 #EXTINF:-1 tvg-name="CCTV-14" group-title="CCTV",CCTV14
 rtp://239.77.0.43:5146
 #EXTINF:-1 tvg-name="CCTV-15" group-title="CCTV",CCTV15
@@ -102,9 +104,9 @@ rtp://239.77.1.239:5146
 #EXTINF:-1 tvg-name="CCTV-15" group-title="CCTV",CCTV15
 rtp://239.77.0.44:5146
 #EXTINF:-1 tvg-name="CCTV-16" group-title="CCTV",CCTV16
-rtp://239.77.0.18:5146
-#EXTINF:-1 tvg-name="CCTV-16" group-title="CCTV",CCTV16
 rtp://239.77.0.218:5146
+#EXTINF:-1 tvg-name="CCTV-16" group-title="CCTV",CCTV16
+rtp://239.77.0.18:5146
 #EXTINF:-1 tvg-name="CCTV-16" group-title="CCTV",CCTV16
 rtp://239.77.0.165:5146
 #EXTINF:-1 tvg-name="CCTV-17" group-title="CCTV",CCTV17
@@ -156,9 +158,9 @@ rtp://239.253.43.10:5146
 #EXTINF:-1 tvg-name="电视指南" group-title="CCTV",电视指南
 rtp://239.253.43.19:5146
 #EXTINF:-1 tvg-name="第一剧场" group-title="CCTV",第一剧场
-rtp://239.253.43.28:5146
-#EXTINF:-1 tvg-name="第一剧场" group-title="CCTV",第一剧场
 rtp://239.253.43.15:5146
+#EXTINF:-1 tvg-name="第一剧场" group-title="CCTV",第一剧场
+rtp://239.253.43.28:5146
 #EXTINF:-1 tvg-name="老故事" group-title="CCTV",老故事
 rtp://239.77.0.220:5146
 #EXTINF:-1 tvg-name="老故事" group-title="CCTV",老故事
@@ -232,11 +234,11 @@ rtp://239.77.0.65:5146
 #EXTINF:-1 tvg-name="广东卫视" group-title="各省卫视",广东卫视
 rtp://239.77.1.152:5146
 #EXTINF:-1 tvg-name="广东卫视" group-title="各省卫视",广东卫视
-rtp://239.77.1.19:5146
-#EXTINF:-1 tvg-name="广东卫视" group-title="各省卫视",广东卫视
 rtp://239.77.0.84:5146
 #EXTINF:-1 tvg-name="广东卫视" group-title="各省卫视",广东卫视
 rtp://239.77.0.4:5146
+#EXTINF:-1 tvg-name="广东卫视" group-title="各省卫视",广东卫视
+rtp://239.77.1.19:5146
 #EXTINF:-1 tvg-name="广东卫视" group-title="各省卫视",广东卫视
 rtp://239.77.0.166:5146
 #EXTINF:-1 tvg-name="广东卫视" group-title="各省卫视",广东卫视
@@ -336,9 +338,9 @@ rtp://239.77.0.139:5146
 #EXTINF:-1 tvg-name="广西卫视" group-title="各省卫视",广西卫视
 rtp://239.253.43.36:5146
 #EXTINF:-1 tvg-name="东南卫视" group-title="各省卫视",东南卫视
-rtp://239.77.1.104:5146
-#EXTINF:-1 tvg-name="东南卫视" group-title="各省卫视",东南卫视
 rtp://239.77.0.146:5146
+#EXTINF:-1 tvg-name="东南卫视" group-title="各省卫视",东南卫视
+rtp://239.77.1.104:5146
 #EXTINF:-1 tvg-name="云南卫视" group-title="各省卫视",云南卫视
 rtp://239.253.43.100:5146
 #EXTINF:-1 tvg-name="云南卫视" group-title="各省卫视",云南卫视
@@ -354,9 +356,9 @@ rtp://239.77.0.150:5146
 #EXTINF:-1 tvg-name="吉林卫视" group-title="各省卫视",吉林卫视
 rtp://239.77.1.111:5146
 #EXTINF:-1 tvg-name="海南卫视" group-title="各省卫视",海南卫视
-rtp://239.253.43.35:5146
-#EXTINF:-1 tvg-name="海南卫视" group-title="各省卫视",海南卫视
 rtp://239.253.43.101:5146
+#EXTINF:-1 tvg-name="海南卫视" group-title="各省卫视",海南卫视
+rtp://239.253.43.35:5146
 #EXTINF:-1 tvg-name="新疆卫视" group-title="各省卫视",新疆卫视
 rtp://239.77.0.47:5146
 #EXTINF:-1 tvg-name="新疆卫视" group-title="各省卫视",新疆卫视
@@ -420,9 +422,9 @@ rtp://239.77.1.175:5146
 #EXTINF:-1 tvg-name="广东" group-title="广东省级频道",广东
 rtp://239.77.0.244:5146
 #EXTINF:-1 tvg-name="广东" group-title="广东省级频道",广东
-rtp://239.77.0.245:5146
-#EXTINF:-1 tvg-name="广东" group-title="广东省级频道",广东
 rtp://239.77.1.237:5146
+#EXTINF:-1 tvg-name="广东" group-title="广东省级频道",广东
+rtp://239.77.0.245:5146
 #EXTINF:-1 tvg-name="嘉佳卡通" group-title="广东省级频道",嘉佳卡通
 rtp://239.77.0.179:5146
 #EXTINF:-1 tvg-name="嘉佳卡通" group-title="广东省级频道",嘉佳卡通
@@ -458,9 +460,9 @@ rtp://239.77.1.22:5146
 #EXTINF:-1 tvg-name="睛彩" group-title="广东省级频道",睛彩
 rtp://239.77.1.23:5146
 #EXTINF:-1 tvg-name="睛彩" group-title="广东省级频道",睛彩
-rtp://239.77.1.21:5146
-#EXTINF:-1 tvg-name="睛彩" group-title="广东省级频道",睛彩
 rtp://239.77.1.20:5146
+#EXTINF:-1 tvg-name="睛彩" group-title="广东省级频道",睛彩
+rtp://239.77.1.21:5146
 #EXTINF:-1 tvg-name="经济科教" group-title="广东省级频道",经济科教
 rtp://239.77.0.85:5146
 #EXTINF:-1 tvg-name="经济科教" group-title="广东省级频道",经济科教
