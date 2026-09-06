@@ -812,7 +812,7 @@ def run(args):
 
             readme_top = f"""# 广东电信 IPTV 播放列表
 
-基于上游频道数据，每周自动测试可用性并生成优化后的 M3U 播放列表。\n\n[自动更新与维护](scripts/README.md)
+每天 06:00（Asia/Shanghai）同步上游频道与 EPG，全量测试频道可用性并生成优化后的 M3U 播放列表。\n\n[自动更新与维护](scripts/README.md)
 
 ## 播放列表
 

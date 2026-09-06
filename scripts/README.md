@@ -15,7 +15,7 @@ PHP 页面不参与自动更新流程。
 # 读取上游并全量重新检测
 /data/code/gdiptv/update_iptv.sh --rescan
 
-# 只更新 EPG：不扫描频道，不重启 rtp2httpd
+# 手动只更新 EPG：不扫描频道，不重启 rtp2httpd
 /data/code/gdiptv/update_iptv.sh --epg-only
 
 # 只运行本地检测与生成，不同步、提交、推送或重启服务
@@ -53,7 +53,7 @@ Python 支持 `--repo`、`--output-dir`、`--proxy-url`；默认探测代理为
 
 ## EPG 单独更新
 
-`--epg-only` 从 `upstream/master` 提取 `epg.xml`，验证 XML、频道与近期有效节目后原子替换。
+需要单独刷新节目单时，可手动运行 `--epg-only`。此模式从 `upstream/master` 提取 `epg.xml`，验证 XML、频道与近期有效节目后原子替换。
 无效或过期节目单不会覆盖现有文件，也不会推送。内容相同时不重复提交。
 上游偶有零时长等异常节目，时效校验容忍不超过 10% 的无效条目并记录数量；超过比例则拒绝更新。
 节目单内容保持上游原样，不重写或删改其中的节目。
@@ -63,10 +63,10 @@ Python 支持 `--repo`、`--output-dir`、`--proxy-url`；默认探测代理为
 
 ## 定时任务
 
-保留每周五 04:30 全量扫描，增加每天 06:15 节目单更新。时间使用系统时区，当前为 Asia/Shanghai。
-节目单安排在上游通常的凌晨更新之后。
+每天 06:00 运行一次 `update_iptv.sh --rescan`，同步上游频道与 EPG，再全量检测频道并发布结果。
+时间使用系统时区，当前为 Asia/Shanghai。频道测试与节目单同步在同一个任务中完成，`--epg-only` 保留为手动命令。
 
-以下命令生成候选配置，保留其他定时任务，并替换旧的 IPTV 扫描配置；重复执行不会重复添加任务：
+以下命令生成候选配置，保留其他定时任务，并替换旧的 IPTV 扫描和独立 EPG 更新配置；重复执行不会重复添加任务：
 
 ```sh
 python3 /data/code/gdiptv/ChinaTelecom-GuangdongIPTV-RTP-List/scripts/install_cron.py > /tmp/gdiptv.crontab
@@ -74,7 +74,7 @@ cat /tmp/gdiptv.crontab
 crontab /tmp/gdiptv.crontab
 ```
 
-完整更新日志：`/data/code/gdiptv/cron.log`；节目单更新日志：`/data/code/gdiptv/epg.log`。
+每日完整更新日志：`/data/code/gdiptv/cron.log`，包含频道测试与 EPG 同步记录。
 维护脚本自身不修改 crontab。
 
 ## 离线回归验证

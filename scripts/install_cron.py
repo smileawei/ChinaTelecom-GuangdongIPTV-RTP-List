@@ -39,9 +39,8 @@ def build_crontab(current, work_dir):
 
     block = [
         BEGIN,
-        "# 周五全量检测；每天 06:15 单独更新节目单（使用系统时区）。",
-        f"30 4 * * 5 {quote(entrypoint)} --rescan >> {quote(work_dir / 'cron.log')} 2>&1",
-        f"15 6 * * * {quote(entrypoint)} --epg-only >> {quote(work_dir / 'epg.log')} 2>&1",
+        "# 每天 06:00 同步上游频道与节目单，并全量检测更新（使用系统时区）。",
+        f"0 6 * * * {quote(entrypoint)} --rescan >> {quote(work_dir / 'cron.log')} 2>&1",
         END,
     ]
     prefix = "\n".join(retained).rstrip()
