@@ -131,6 +131,8 @@ rtp://239.253.43.11:5146
 rtp://239.253.43.21:5146
 #EXTINF:-1 tvg-name="央视文化精品" group-title="CCTV",央视文化精品
 rtp://239.253.43.13:5146
+#EXTINF:-1 tvg-name="央视文化精品" group-title="CCTV",央视文化精品
+rtp://239.253.43.27:5146
 #EXTINF:-1 tvg-name="女性时尚" group-title="CCTV",女性时尚
 rtp://239.253.43.8:5146
 #EXTINF:-1 tvg-name="女性时尚" group-title="CCTV",女性时尚

@@ -144,13 +144,24 @@ class AtomicOutputs:
 def normalize_channel_name(name):
     if re.match(r"(?i)^CCTV-?4K", name):
         return "CCTV4K"
+    if re.match(r"(?i)^广东\s*4K", name):
+        return "广东4K"
     norm = re.sub(r"4K超高清|超高清|高清|标清|超清|4K超|FHD|HD|SD|4K|25P",
                   "", name, flags=re.IGNORECASE)
     for suffix in ["超���", "时移专用", "-测��", "-1M开机标清", "-精选"]:
         norm = norm.replace(suffix, "")
     norm = re.sub(r"[（(][^)）]*[)）]", "", norm)
     norm = re.sub(r"(CCTV|CETV|HZTV|PPTV)-(\d)", r"\1\2", norm, flags=re.IGNORECASE)
-    return norm.strip() or name
+    norm = norm.strip() or name
+    return {"央视精品": "央视文化精品"}.get(norm, norm)
+
+
+def channel_identity(name, tvg_name=""):
+    """纠正上游共用的睛彩标识，其余频道继续优先使用 tvg-name。"""
+    normalized_name = normalize_channel_name(name)
+    if normalized_name in {"睛彩青少", "睛彩广场舞", "睛彩竞技", "睛彩篮球"}:
+        return normalized_name
+    return normalize_channel_name(tvg_name or name)
 
 
 def normalize_for_match(name):
@@ -502,9 +513,7 @@ def run(args):
         if info is None:
             continue
         ch = addr_map.get(addr, {})
-        # use tvg_name for grouping if available, else channel name
-        key = ch.get("tvg_name") or ch.get("name", addr)
-        norm_key = normalize_channel_name(key)
+        norm_key = channel_identity(ch.get("name", addr), ch.get("tvg_name", ""))
         name_groups[norm_key].append({
             "addr": addr,
             "name": ch.get("name", ""),

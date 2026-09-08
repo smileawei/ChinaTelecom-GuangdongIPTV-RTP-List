@@ -76,6 +76,42 @@ class ProbeTests(unittest.TestCase):
         paths = [self.repo / "README.md", self.cache, *self.work.glob("result*")]
         return {path: path.read_bytes() for path in paths if path.exists()}
 
+    def test_channel_identity_preserves_sources_and_epg(self):
+        channels = [
+            ("央视精品高清", "央视精品"),
+            ("央视文化精品高清", "央视文化精品"),
+            ("睛彩青少高清", "睛彩"),
+            ("睛彩广场舞高清", "睛彩"),
+            ("睛彩竞技高清", "睛彩"),
+            ("睛彩篮球高清", "睛彩"),
+            ("广东4K超高清", "广东4K"),
+            ("广东4K超高清 窄色域 30", "广东4K"),
+        ]
+        self.addrs = [f"239.1.1.{n}:5140" for n in range(1, 9)]
+        lines = ["#EXTM3U"]
+        for (name, tvg), addr in zip(channels, self.addrs):
+            lines.extend([f'#EXTINF:-1 tvg-name="{tvg}",{name}', f"rtp://{addr}"])
+        (self.repo / "GuangdongIPTV_rtp_all.m3u").write_text("\n".join(lines) + "\n")
+        (self.repo / "epg.xml").write_text(
+            '<tv><channel id="premium"><display-name>央视文化精品</display-name></channel></tv>')
+        self.write_cache({addr: playable(720 if i == 0 else 1080)
+                          for i, addr in enumerate(self.addrs)})
+        code, ffprobe, _, err = self.run_probe()
+        self.assertEqual(code, 0, err)
+        ffprobe.assert_not_called()
+        best = {c["name"]: c for c in probe.parse_m3u(self.work / "result.m3u")}
+        self.assertEqual(set(best), {"央视文化精品", "广东4K", "睛彩青少",
+                                     "睛彩广场舞", "睛彩竞技", "睛彩篮球"})
+        self.assertEqual(best["央视文化精品"]["addr"], self.addrs[1])
+        for i, name in enumerate(["睛彩青少", "睛彩广场舞", "睛彩竞技", "睛彩篮球"], 2):
+            self.assertEqual(best[name]["addr"], self.addrs[i])
+        all_sources = probe.parse_m3u(self.work / "result_all.m3u")
+        self.assertEqual(len(all_sources), 8)
+        self.assertEqual({c["addr"] for c in all_sources}, set(self.addrs))
+        epg_sources = probe.parse_m3u(self.work / "result_all_epg.m3u")
+        self.assertEqual({c["addr"] for c in epg_sources}, set(self.addrs[:2]))
+        self.assertTrue(all(c["tvg_name"] == "央视文化精品" for c in epg_sources))
+
     def test_legacy_migration_preserves_detection_time_and_removes_obsolete_address(self):
         infos = {addr: playable() for addr in self.addrs}
         infos["239.9.9.9:5140"] = playable()

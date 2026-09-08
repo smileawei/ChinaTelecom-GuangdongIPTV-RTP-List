@@ -51,8 +51,6 @@ rtp://239.253.43.127:5146
 rtp://239.253.43.11:5146
 #EXTINF:-1 tvg-name="央视文化精品" group-title="CCTV",央视文化精品
 rtp://239.253.43.13:5146
-#EXTINF:-1 tvg-name="央视精品" group-title="CCTV",央视精品
-rtp://239.253.43.27:5146
 #EXTINF:-1 tvg-name="女性时尚" group-title="CCTV",女性时尚
 rtp://239.253.43.8:5146
 #EXTINF:-1 tvg-name="怀旧剧场" group-title="CCTV",怀旧剧场
@@ -157,7 +155,7 @@ rtp://239.77.1.176:5146
 rtp://239.77.1.223:5146
 #EXTINF:-1 tvg-name="深圳移动电视" group-title="深圳频道",深圳移动电视
 rtp://239.77.1.175:5146
-#EXTINF:-1 tvg-name="广东" group-title="广东省级频道",广东
+#EXTINF:-1 tvg-name="广东4K" group-title="广东省级频道",广东4K
 rtp://239.77.1.237:5146
 #EXTINF:-1 tvg-name="嘉佳卡通" group-title="广东省级频道",嘉佳卡通
 rtp://239.77.0.179:5146
@@ -179,7 +177,13 @@ rtp://239.77.0.1:5146
 rtp://239.253.43.72:5146
 #EXTINF:-1 tvg-name="广州综合" group-title="广东省级频道",广州综合
 rtp://239.253.43.71:5146
-#EXTINF:-1 tvg-name="睛彩" group-title="广东省级频道",睛彩
+#EXTINF:-1 tvg-name="睛彩广场舞" group-title="广东省级频道",睛彩广场舞
+rtp://239.77.1.23:5146
+#EXTINF:-1 tvg-name="睛彩竞技" group-title="广东省级频道",睛彩竞技
+rtp://239.77.1.20:5146
+#EXTINF:-1 tvg-name="睛彩篮球" group-title="广东省级频道",睛彩篮球
+rtp://239.77.1.21:5146
+#EXTINF:-1 tvg-name="睛彩青少" group-title="广东省级频道",睛彩青少
 rtp://239.77.1.22:5146
 #EXTINF:-1 tvg-name="经济科教" group-title="广东省级频道",经济科教
 rtp://239.77.0.85:5146
