@@ -24,19 +24,17 @@ rtp://239.77.0.169:5146
 #EXTINF:-1 tvg-name="CCTV-3" group-title="CCTV",CCTV3
 rtp://239.77.0.32:5146
 #EXTINF:-1 tvg-name="CCTV-4" group-title="CCTV",CCTV4
-rtp://239.77.1.166:5146
-#EXTINF:-1 tvg-name="CCTV-4" group-title="CCTV",CCTV4
 rtp://239.77.1.163:5146
 #EXTINF:-1 tvg-name="CCTV-4" group-title="CCTV",CCTV4
 rtp://239.77.0.78:5146
 #EXTINF:-1 tvg-name="CCTV-4" group-title="CCTV",CCTV4
 rtp://239.77.0.33:5146
 #EXTINF:-1 tvg-name="CCTV-4K" group-title="CCTV",CCTV4K
+rtp://239.77.0.194:5146
+#EXTINF:-1 tvg-name="CCTV-4K" group-title="CCTV",CCTV4K
 rtp://239.77.1.180:5146
 #EXTINF:-1 tvg-name="CCTV-4K" group-title="CCTV",CCTV4K
 rtp://239.77.0.174:5146
-#EXTINF:-1 tvg-name="CCTV-4K" group-title="CCTV",CCTV4K
-rtp://239.77.0.194:5146
 #EXTINF:-1 tvg-name="CCTV-5" group-title="CCTV",CCTV5
 rtp://239.77.0.170:5146
 #EXTINF:-1 tvg-name="CCTV-5" group-title="CCTV",CCTV5
@@ -91,8 +89,6 @@ rtp://239.77.0.188:5146
 rtp://239.77.0.42:5146
 #EXTINF:-1 tvg-name="CCTV-14" group-title="CCTV",CCTV14
 rtp://239.77.1.161:5146
-#EXTINF:-1 tvg-name="CCTV-14" group-title="CCTV",CCTV14
-rtp://239.77.1.171:5146
 #EXTINF:-1 tvg-name="CCTV-14" group-title="CCTV",CCTV14
 rtp://239.77.0.133:5146
 #EXTINF:-1 tvg-name="CCTV-14" group-title="CCTV",CCTV14
@@ -422,9 +418,9 @@ rtp://239.77.1.175:5146
 #EXTINF:-1 tvg-name="广东4K" group-title="广东省级频道",广东4K
 rtp://239.77.0.244:5146
 #EXTINF:-1 tvg-name="广东4K" group-title="广东省级频道",广东4K
-rtp://239.77.0.245:5146
-#EXTINF:-1 tvg-name="广东4K" group-title="广东省级频道",广东4K
 rtp://239.77.1.237:5146
+#EXTINF:-1 tvg-name="广东4K" group-title="广东省级频道",广东4K
+rtp://239.77.0.245:5146
 #EXTINF:-1 tvg-name="嘉佳卡通" group-title="广东省级频道",嘉佳卡通
 rtp://239.77.0.179:5146
 #EXTINF:-1 tvg-name="嘉佳卡通" group-title="广东省级频道",嘉佳卡通
