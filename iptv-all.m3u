@@ -416,11 +416,11 @@ rtp://239.77.1.223:5146
 #EXTINF:-1 tvg-name="深圳移动电视" group-title="深圳频道",深圳移动电视
 rtp://239.77.1.175:5146
 #EXTINF:-1 tvg-name="广东4K" group-title="广东省级频道",广东4K
+rtp://239.77.0.244:5146
+#EXTINF:-1 tvg-name="广东4K" group-title="广东省级频道",广东4K
 rtp://239.77.1.237:5146
 #EXTINF:-1 tvg-name="广东4K" group-title="广东省级频道",广东4K
 rtp://239.77.0.245:5146
-#EXTINF:-1 tvg-name="广东4K" group-title="广东省级频道",广东4K
-rtp://239.77.0.244:5146
 #EXTINF:-1 tvg-name="嘉佳卡通" group-title="广东省级频道",嘉佳卡通
 rtp://239.77.0.179:5146
 #EXTINF:-1 tvg-name="嘉佳卡通" group-title="广东省级频道",嘉佳卡通
