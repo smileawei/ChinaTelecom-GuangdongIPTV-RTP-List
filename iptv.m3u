@@ -8,7 +8,7 @@ rtp://239.77.0.169:5146
 #EXTINF:-1 tvg-name="CCTV-4" group-title="CCTV",CCTV4
 rtp://239.77.1.163:5146
 #EXTINF:-1 tvg-name="CCTV-4K" group-title="CCTV",CCTV4K
-rtp://239.77.0.174:5146
+rtp://239.77.0.194:5146
 #EXTINF:-1 tvg-name="CCTV-5" group-title="CCTV",CCTV5
 rtp://239.77.0.170:5146
 #EXTINF:-1 tvg-name="CCTV-5+" group-title="CCTV",CCTV5+
@@ -82,7 +82,7 @@ rtp://239.77.0.59:5146
 #EXTINF:-1 tvg-name="北京卫视" group-title="各省卫视",北京卫视
 rtp://239.77.0.3:5146
 #EXTINF:-1 tvg-name="广东卫视" group-title="各省卫视",广东卫视
-rtp://239.77.0.65:5146
+rtp://239.77.0.66:5146
 #EXTINF:-1 tvg-name="深圳卫视" group-title="各省卫视",深圳卫视
 rtp://239.77.1.14:5146
 #EXTINF:-1 tvg-name="山东卫视" group-title="各省卫视",山东卫视
@@ -261,8 +261,6 @@ rtp://239.253.43.70:5146
 rtp://239.77.0.155:5146
 #EXTINF:-1 tvg-name="肇庆综合" group-title="广东地方频道",肇庆综合
 rtp://239.253.43.1:5146
-#EXTINF:-1 tvg-name="茂名公共" group-title="广东地方频道",茂名公共
-rtp://239.77.0.207:5146
 #EXTINF:-1 tvg-name="茂名综合" group-title="广东地方频道",茂名综合
 rtp://239.77.0.206:5146
 #EXTINF:-1 tvg-name="阳江-1" group-title="广东地方频道",阳江-1
