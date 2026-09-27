@@ -646,23 +646,25 @@ def run(args):
         # 构建 EPG 匹配表：norm_name -> epg channel id
         epg_file = f"{repo}/epg.xml"
         epg_map = {}  # norm_name -> (epg_id, epg_display_name)
-        if os.path.exists(epg_file):
+        epg_warning = None
+        epg_channels = {}
+        all_norm_names = {ch["norm_name"] for cat in cat_order for ch in categories[cat]}
+        try:
             epg_tree = ET.parse(epg_file)
-            epg_channels = {}  # display_name -> id
+            if epg_tree.getroot().tag != "tv":
+                raise ValueError("节目单根元素必须是 tv")
             for epg_ch in epg_tree.getroot().findall("channel"):
                 dn = epg_ch.find("display-name")
                 if dn is not None and dn.text:
                     epg_channels[dn.text] = epg_ch.get("id")
-
+            if not epg_channels:
+                raise ValueError("节目单没有可匹配的频道")
+        except (OSError, ValueError, ET.ParseError) as exc:
+            epg_warning = str(exc)
+        else:
             epg_norm = {}  # normalized -> (id, original_name)
             for dn, eid in epg_channels.items():
                 epg_norm[normalize_for_match(dn)] = (eid, dn)
-
-            # 为每个频道匹配 EPG
-            all_norm_names = set()
-            for cat in cat_order:
-                for ch in categories[cat]:
-                    all_norm_names.add(ch["norm_name"])
 
             for norm_name in all_norm_names:
                 # 精确匹配
@@ -675,14 +677,25 @@ def run(args):
                     epg_map[norm_name] = epg_norm[nn]
                     continue
 
-            matched = len(epg_map)
-            print(f"  EPG 匹配: {matched}/{len(all_norm_names)} 个频道")
-
         previous_epg = output_dir / "result_epg.m3u"
-        previous_epg_count = len(parse_m3u(previous_epg)) if previous_epg.exists() else 0
-        if previous_epg_count:
-            check_retained(len(epg_map), previous_epg_count, args.min_retained_ratio,
-                           "EPG匹配频道数量")
+        if not previous_epg.exists():
+            previous_epg = repo / "iptv-epg.m3u"
+        previous_matches = {}
+        if previous_epg.exists():
+            for channel in parse_m3u(previous_epg):
+                name = normalize_channel_name(channel["name"])
+                if name in all_norm_names:
+                    previous_matches[name] = (None, channel["tvg_name"] or name)
+        # EPG 降级只沿用频道匹配，仍用本次检测结果生成源，避免保留失效地址。
+        if previous_matches and len(epg_map) < len(previous_matches) * args.min_retained_ratio:
+            epg_warning = (epg_warning or f"匹配频道骤降: 本次 {len(epg_map)}，"
+                           f"上次仍在播的频道 {len(previous_matches)}")
+        if epg_warning:
+            epg_map = previous_matches
+            print(f"告警: EPG 匹配不可用（{epg_warning}）；沿用上次频道匹配，"
+                  "继续发布直播列表。保留的节目单可能已过期。", file=sys.stderr)
+        print(f"  EPG 匹配: {len(epg_map)}/{len(all_norm_names)} 个频道"
+              + ("（沿用上次匹配）" if epg_warning else ""))
 
         epg_url = "https://warp.rm.do/iptv/epg.xml"
 
@@ -821,7 +834,7 @@ def run(args):
 
             readme_top = f"""# 广东电信 IPTV 播放列表
 
-每天 06:00（Asia/Shanghai）同步上游频道与 EPG，全量测试频道可用性并生成优化后的 M3U 播放列表。\n\n[自动更新与维护](scripts/README.md)
+每天 06:00（Asia/Shanghai）同步上游频道，全量测试频道可用性并生成优化后的 M3U 播放列表。EPG 独立校验，异常时保留原节目单并记录告警，频道列表照常更新。\n\n[自动更新与维护](scripts/README.md)
 
 ## 播放列表
 

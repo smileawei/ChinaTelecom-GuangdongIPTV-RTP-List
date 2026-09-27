@@ -31,6 +31,17 @@ class EpgValidationTests(unittest.TestCase):
         self.destination.write_text("previous programme", encoding="utf-8")
         self.now = datetime(2026, 9, 6, 12, tzinfo=timezone.utc)
 
+    def channel_epg(self, channel_count, recent_count, now=None):
+        now = now or self.now
+        channels = ''.join(f'<channel id="{index}"/>' for index in range(channel_count))
+        programmes = []
+        for index in range(channel_count):
+            start = now if index < recent_count else now - timedelta(days=2)
+            stop = start + timedelta(hours=1)
+            programmes.append(f'<programme channel="{index}" start="{start:%Y%m%d%H%M%S %z}" '
+                              f'stop="{stop:%Y%m%d%H%M%S %z}"><title>节目</title></programme>')
+        return '<tv>' + channels + ''.join(programmes) + '</tv>'
+
     def test_expired_or_distant_future_does_not_replace_previous_file(self):
         for offset in (-2, 3):
             with self.subTest(offset=offset):
@@ -81,6 +92,89 @@ class EpgValidationTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "10%"):
             epg.update_epg(self.source, self.destination, now=self.now)
         self.assertEqual(self.destination.read_text(), "previous programme")
+
+    def test_fresh_but_partial_epg_does_not_replace_expired_full_coverage(self):
+        self.destination.write_text(self.channel_epg(151, 0), encoding="utf-8")
+        previous = self.destination.read_bytes()
+        self.source.write_text(self.channel_epg(21, 21), encoding="utf-8")
+        candidate = self.source.read_bytes()
+        with self.assertRaisesRegex(ValueError, "频道数量骤降.*21.*151"):
+            epg.update_epg(self.source, self.destination, now=self.now)
+        self.assertEqual(self.destination.read_bytes(), previous)
+        self.assertEqual(self.source.read_bytes(), candidate)
+
+    def test_one_fresh_channel_cannot_hide_expired_programmes_with_or_without_baseline(self):
+        self.source.write_text(self.channel_epg(151, 1), encoding="utf-8")
+        candidate = self.source.read_bytes()
+        for previous in (self.channel_epg(151, 0), "unparseable previous XML", None):
+            with self.subTest(baseline=previous is not None):
+                if previous is None:
+                    self.destination.unlink()
+                else:
+                    self.destination.write_text(previous, encoding="utf-8")
+                with self.assertRaisesRegex(ValueError, "近期覆盖不足.*1/151"):
+                    epg.update_epg(self.source, self.destination, now=self.now)
+                if previous is None:
+                    self.assertFalse(self.destination.exists())
+                else:
+                    self.assertEqual(self.destination.read_bytes(), previous.encode("utf-8"))
+                self.assertEqual(self.source.read_bytes(), candidate)
+
+    def test_recent_coverage_is_compared_against_previous_declared_channels(self):
+        self.destination.write_text(self.channel_epg(151, 0), encoding="utf-8")
+        previous = self.destination.read_bytes()
+        # 80/110 passes the candidate's own 70% check, but 80/151 is insufficient.
+        self.source.write_text(self.channel_epg(110, 80), encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "近期有效频道数量骤降.*80.*151"):
+            epg.update_epg(self.source, self.destination, now=self.now)
+        self.assertEqual(self.destination.read_bytes(), previous)
+
+    def test_restored_full_coverage_replaces_expired_epg_without_rewriting_content(self):
+        self.destination.write_text(self.channel_epg(151, 0), encoding="utf-8")
+        self.source.write_text(self.channel_epg(151, 151), encoding="utf-8")
+        changed, summary = epg.update_epg(self.source, self.destination, now=self.now)
+        self.assertTrue(changed)
+        self.assertEqual(summary["recent_channels"], 151)
+        self.assertEqual(self.destination.read_bytes(), self.source.read_bytes())
+
+    def test_retained_ratio_is_configurable_and_has_a_valid_range(self):
+        self.destination.write_text(self.channel_epg(151, 0), encoding="utf-8")
+        self.source.write_text(self.channel_epg(21, 21), encoding="utf-8")
+        previous = self.destination.read_bytes()
+        for ratio in (0, -0.1, 1.01, float("nan"), float("inf")):
+            with self.subTest(ratio=ratio):
+                with self.assertRaisesRegex(ValueError, "保留比例"):
+                    epg.update_epg(self.source, self.destination, now=self.now,
+                                   min_retained_ratio=ratio)
+                self.assertEqual(self.destination.read_bytes(), previous)
+        changed, summary = epg.update_epg(self.source, self.destination, now=self.now,
+                                           min_retained_ratio=0.1)
+        self.assertTrue(changed)
+        self.assertEqual(summary["recent_channels"], 21)
+
+    def test_exact_minimum_recent_coverage_is_accepted(self):
+        self.source.write_text(self.channel_epg(10, 7), encoding="utf-8")
+        self.assertEqual(epg.validate_epg(self.source, now=self.now)["recent_channels"], 7)
+        self.source.write_text(self.channel_epg(10, 6), encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "近期覆盖不足"):
+            epg.validate_epg(self.source, now=self.now)
+
+    def test_cli_default_and_custom_retained_ratio(self):
+        now = datetime.now(timezone.utc)
+        self.destination.write_text(self.channel_epg(151, 0, now=now), encoding="utf-8")
+        self.source.write_text(self.channel_epg(21, 21, now=now), encoding="utf-8")
+        previous = self.destination.read_bytes()
+        command = [sys.executable, str(SCRIPT_DIR / "update_epg.py"),
+                   str(self.source), str(self.destination)]
+        result = subprocess.run(command, capture_output=True, text=True, timeout=10)
+        self.assertEqual(result.returncode, 1, result.stdout + result.stderr)
+        self.assertIn("频道数量骤降", result.stderr)
+        self.assertEqual(self.destination.read_bytes(), previous)
+        result = subprocess.run(command + ["--min-retained-ratio", "0.1"],
+                                capture_output=True, text=True, timeout=10)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertIn("21 个频道有近期节目", result.stdout)
+        self.assertEqual(self.destination.read_bytes(), self.source.read_bytes())
 
 
 class UpdateScriptTests(unittest.TestCase):
@@ -204,6 +298,35 @@ with open(os.environ["COMMAND_LOG"], "a") as log:
         self.assertEqual((self.repo / "epg.xml").read_text(), self.old_epg)
         self.assertNotIn("probe", self.commands())
         self.assert_not_published()
+
+    def test_full_update_keeps_original_epg_and_publishes_despite_bad_upstream_epg(self):
+        expired = xmltv(datetime.now(timezone.utc) - timedelta(days=4),
+                        datetime.now(timezone.utc) - timedelta(days=3))
+        for content in ("<tv/>", "<tv><channel>", expired):
+            with self.subTest(content=content):
+                self.update_upstream(content=content)
+                self.log.write_text("")
+                result = self.run_update()
+                self.assertEqual(result.returncode, 0, self.output)
+                self.assertIn("告警", self.output)
+                self.assertIn("频道更新完成", self.output)
+                self.assertIn("probe", self.commands())
+                self.assertIn("ssh", self.commands())
+                self.assertEqual((self.repo / "epg.xml").read_text(), self.old_epg)
+                self.assertEqual(self.git(self.origin, "show", "master:epg.xml"), self.old_epg)
+                self.assertEqual(self.git(self.repo, "status", "--porcelain", "--untracked-files=no"), "")
+                # 同一个坏上游版本次日仍可运行，既不卡脏工作区也不产生重复提交。
+                head = self.git(self.repo, "rev-parse", "HEAD")
+                self.assertEqual(self.run_update().returncode, 0, self.output)
+                self.assertEqual(self.git(self.repo, "rev-parse", "HEAD"), head)
+
+    def test_full_update_recovers_original_epg_when_upstream_deletes_it(self):
+        self.git(self.base, "rm", "epg.xml")
+        self.git(self.base, "commit", "-m", "upstream removes epg")
+        self.assertEqual(self.run_update().returncode, 0, self.output)
+        self.assertEqual((self.repo / "epg.xml").read_text(), self.old_epg)
+        self.assertEqual(self.git(self.origin, "show", "master:epg.xml"), self.old_epg)
+        self.assertIn("ssh", self.commands())
 
     def test_fetch_failure_stops_both_modes_before_probe_or_push(self):
         for args in ((), ("--epg-only",)):

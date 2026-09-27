@@ -20,7 +20,8 @@ usage() {
   IPTV_ROUTER    rtp2httpd 所在 SSH 主机，默认 10.220.10.1
 
 两种模式共用非阻塞锁；已有任务运行时返回非零。
-同步、验证或检测失败都会停止本次发布。仓库必须在 master 分支且没有已跟踪文件的改动。
+同步或频道检测失败会停止发布；EPG 验证失败会保留原节目单并告警，频道照常更新。
+仓库必须在 master 分支且没有已跟踪文件的改动。
 HELP
 }
 
@@ -61,6 +62,8 @@ if ! flock -n 9; then
 fi
 
 EPG_TEMP=""
+EPG_BACKUP_DIR=""
+EPG_WARNING=0
 MERGE_STARTED=0
 cleanup() {
     local status=$?
@@ -70,9 +73,14 @@ cleanup() {
     if [[ -n "$EPG_TEMP" ]]; then
         rm -f -- "$EPG_TEMP"
     fi
+    if [[ -n "$EPG_BACKUP_DIR" ]]; then
+        rm -rf -- "$EPG_BACKUP_DIR"
+    fi
     exit "$status"
 }
 trap cleanup EXIT
+
+echo "[任务] $(date '+%Y-%m-%d %H:%M:%S %z') 开始 IPTV 更新（EPG-only=$EPG_ONLY）"
 
 if [[ "$(git symbolic-ref --quiet --short HEAD)" != master ]]; then
     echo "错误: 请在 master 分支执行更新。" >&2
@@ -124,6 +132,12 @@ echo "[1/4] 同步频道数据仓库..."
 git fetch origin master
 git merge --ff-only origin/master
 git fetch upstream master
+# 上游合并包含 epg.xml；先保存本地版本，独立验证候选后再决定是否采用。
+EPG_BACKUP_DIR="$(mktemp -d "${WORK_DIR}/.epg-backup.XXXXXX")"
+if [[ -f epg.xml ]]; then
+    cp -p -- epg.xml "${EPG_BACKUP_DIR}/epg.xml"
+fi
+EPG_TEMP="$(mktemp "${WORK_DIR}/.epg-upstream.XXXXXX")"
 MERGE_STARTED=1
 if ! git merge --no-edit upstream/master; then
     CONFLICT_FILES=()
@@ -150,6 +164,26 @@ if ! git merge --no-edit upstream/master; then
     git commit --no-edit -m "合并上游更新，冲突的数据文件采用上游版本"
 fi
 MERGE_STARTED=0
+
+echo "[EPG] 独立验证上游节目单..."
+if [[ -f "${EPG_BACKUP_DIR}/epg.xml" ]]; then
+    cp -p -- "${EPG_BACKUP_DIR}/epg.xml" epg.xml
+else
+    rm -f -- epg.xml
+fi
+if git show upstream/master:epg.xml >"$EPG_TEMP" &&
+    python3 "${SCRIPT_DIR}/update_epg.py" "$EPG_TEMP" "${REPO_DIR}/epg.xml"; then
+    EPG_COMMIT="更新已验证的 EPG 节目单"
+else
+    EPG_WARNING=1
+    EPG_COMMIT="保留原节目单，上游 EPG 异常不影响频道更新"
+    echo "告警: 上游 EPG 更新失败，保留原节目单（可能已过期），继续频道检测与发布。" >&2
+fi
+# 把合并带入的不合格 EPG 恢复为原版本；即使随后频道检测失败也保持工作区干净。
+if [[ -n "$(git status --porcelain -- epg.xml)" ]]; then
+    git add -A -- epg.xml
+    git commit -m "$EPG_COMMIT $(date '+%Y-%m-%d %H:%M')" -- epg.xml
+fi
 
 echo "[2/4] 检测频道并生成播放列表..."
 # 固定目录放在最后，连 argparse 允许的参数缩写也不能覆盖编排层的目录。
@@ -183,4 +217,8 @@ push_if_ahead
 
 echo "[4/4] 重启 rtp2httpd..."
 ssh -o BatchMode=yes -o ConnectTimeout=10 "$ROUTER" /etc/init.d/rtp2httpd restart
-echo "更新完成。"
+if (( EPG_WARNING )); then
+    echo "频道更新完成；告警: EPG 未更新，继续使用原节目单，请检查上游。"
+else
+    echo "更新完成。"
+fi

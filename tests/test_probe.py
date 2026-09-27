@@ -175,33 +175,53 @@ class ProbeTests(unittest.TestCase):
         self.assertIn("可用频道数量异常", err)
         self.assertEqual(self.snapshot(), before)
 
-    def test_broken_epg_does_not_overwrite_even_the_report_or_cache(self):
+    def test_bad_epg_keeps_matches_but_updates_channels_and_sources(self):
         self.write_cache()
         self.assertEqual(self.run_probe()[0], 0)
-        before = self.snapshot()
-        (self.repo / "epg.xml").write_text("<tv><channel>")
-        code, _, _, err = self.run_probe("--rescan")
-        self.assertEqual(code, 1)
-        self.assertIn("错误:", err)
-        self.assertEqual(self.snapshot(), before)
-        self.assertFalse(list(self.work.glob(".result*")))
-
-    def test_missing_or_empty_epg_keeps_all_previously_published_outputs(self):
-        self.write_cache()
-        self.assertEqual(self.run_probe()[0], 0)
-        before = self.snapshot()
         epg = self.repo / "epg.xml"
-        for content in (None, "<tv/>"):
+        for index, content in enumerate((None, "<tv/>", "<tv><channel>",
+                '<tv><channel id="other"><display-name>不存在的频道</display-name></channel></tv>')):
             with self.subTest(content=content):
                 if content is None:
                     epg.unlink()
                 else:
                     epg.write_text(content)
+                old_addr = self.addrs[0]
+                self.addrs[0] = f"239.1.2.{index + 1}:5140"
+                self.write_sources()
                 code, _, _, err = self.run_probe("--rescan")
-                self.assertEqual(code, 1)
-                self.assertIn("EPG匹配频道数量异常", err)
-                self.assertEqual(self.snapshot(), before)
+                self.assertEqual(code, 0, err)
+                self.assertIn("告警: EPG", err)
+                self.assertEqual(len(probe.parse_m3u(self.work / "result.m3u")), 4)
+                for name in ("result.m3u", "result_all.m3u", "result_epg.m3u", "result_all_epg.m3u"):
+                    addresses = {c["addr"] for c in probe.parse_m3u(self.work / name)}
+                    self.assertIn(self.addrs[0], addresses)
+                    self.assertNotIn(old_addr, addresses)
+                self.assertIn("CCTV1", (self.work / "result_epg.m3u").read_text())
                 self.assertFalse(list(self.work.glob(".result*")))
+
+    def test_epg_fallback_never_reintroduces_failed_channels(self):
+        self.write_cache()
+        self.assertEqual(self.run_probe()[0], 0)
+        (self.repo / "epg.xml").write_text("<tv/>")
+        def failure(addr, _):
+            return (addr, None, "timeout") if addr == self.addrs[0] else (addr, playable(), None)
+        code, _, _, err = self.run_probe("--rescan", side_effect=failure)
+        self.assertEqual(code, 0, err)
+        self.assertEqual(len(probe.parse_m3u(self.work / "result.m3u")), 3)
+        self.assertEqual(probe.parse_m3u(self.work / "result_epg.m3u"), [])
+
+    def test_healthy_epg_replaces_fallback_matches(self):
+        self.write_cache()
+        self.assertEqual(self.run_probe()[0], 0)
+        (self.repo / "epg.xml").write_text("<tv/>")
+        self.assertEqual(self.run_probe()[0], 0)
+        (self.repo / "epg.xml").write_text(
+            '<tv><channel id="two"><display-name>CCTV2</display-name></channel></tv>')
+        code, _, _, err = self.run_probe()
+        self.assertEqual(code, 0, err)
+        self.assertNotIn("告警", err)
+        self.assertEqual([c["name"] for c in probe.parse_m3u(self.work / "result_epg.m3u")], ["CCTV2"])
 
     def test_first_publication_without_epg_is_allowed(self):
         self.write_cache()
