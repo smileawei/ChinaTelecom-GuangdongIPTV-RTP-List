@@ -840,10 +840,10 @@ def run(args):
 
 | 文件 | 说明 | 订阅地址（CF加速） |
 |------|------|---------|
-| `iptv.m3u` | 每频道保留最佳源（推荐） | `https://warp.rm.do/iptv/iptv.m3u` |
-| `iptv-all.m3u` | 每频道保留所有源（聚合） | `https://warp.rm.do/iptv/iptv-all.m3u` |
-| `iptv-epg.m3u` | 仅含有EPG的频道 | `https://warp.rm.do/iptv/iptv-epg.m3u` |
-| `iptv-all-epg.m3u` | 仅含有EPG的频道（聚合） | `https://warp.rm.do/iptv/iptv-all-epg.m3u` |
+| `iptv.m3u` | 每频道保留最佳源（推荐） | [https://warp.rm.do/iptv/iptv.m3u](https://warp.rm.do/iptv/iptv.m3u) |
+| `iptv-all.m3u` | 每频道保留所有源（聚合） | [https://warp.rm.do/iptv/iptv-all.m3u](https://warp.rm.do/iptv/iptv-all.m3u) |
+| `iptv-epg.m3u` | 仅含有EPG的频道 | [https://warp.rm.do/iptv/iptv-epg.m3u](https://warp.rm.do/iptv/iptv-epg.m3u) |
+| `iptv-all-epg.m3u` | 仅含有EPG的频道（聚合） | [https://warp.rm.do/iptv/iptv-all-epg.m3u](https://warp.rm.do/iptv/iptv-all-epg.m3u) |
 
 ## 使用方法
 
