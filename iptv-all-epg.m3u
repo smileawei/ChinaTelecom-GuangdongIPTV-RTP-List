@@ -30,11 +30,11 @@ rtp://239.77.0.78:5146
 #EXTINF:-1 tvg-name="CCTV-4" group-title="CCTV",CCTV4
 rtp://239.77.0.33:5146
 #EXTINF:-1 tvg-name="CCTV-4K" group-title="CCTV",CCTV4K
+rtp://239.77.0.174:5146
+#EXTINF:-1 tvg-name="CCTV-4K" group-title="CCTV",CCTV4K
 rtp://239.77.1.180:5146
 #EXTINF:-1 tvg-name="CCTV-4K" group-title="CCTV",CCTV4K
 rtp://239.77.0.194:5146
-#EXTINF:-1 tvg-name="CCTV-4K" group-title="CCTV",CCTV4K
-rtp://239.77.0.174:5146
 #EXTINF:-1 tvg-name="CCTV-5" group-title="CCTV",CCTV5
 rtp://239.77.0.170:5146
 #EXTINF:-1 tvg-name="CCTV-5" group-title="CCTV",CCTV5
@@ -115,10 +115,6 @@ rtp://239.77.0.115:5146
 rtp://239.253.43.7:5146
 #EXTINF:-1 tvg-name="世界地理" group-title="CCTV",世界地理
 rtp://239.253.43.24:5146
-#EXTINF:-1 tvg-name="兵器科技" group-title="CCTV",兵器科技
-rtp://239.253.43.9:5146
-#EXTINF:-1 tvg-name="兵器科技" group-title="CCTV",兵器科技
-rtp://239.253.43.18:5146
 #EXTINF:-1 tvg-name="卫生健康" group-title="CCTV",卫生健康
 rtp://239.77.0.212:5146
 #EXTINF:-1 tvg-name="央视台球" group-title="CCTV",央视台球
@@ -159,18 +155,10 @@ rtp://239.77.1.197:5146
 rtp://239.253.43.16:5146
 #EXTINF:-1 tvg-name="风云剧场" group-title="CCTV",风云剧场
 rtp://239.253.43.26:5146
-#EXTINF:-1 tvg-name="风云足球" group-title="CCTV",风云足球
-rtp://239.253.43.14:5146
-#EXTINF:-1 tvg-name="风云足球" group-title="CCTV",风云足球
-rtp://239.253.43.20:5146
 #EXTINF:-1 tvg-name="风云音乐" group-title="CCTV",风云音乐
 rtp://239.253.43.6:5146
 #EXTINF:-1 tvg-name="风云音乐" group-title="CCTV",风云音乐
 rtp://239.253.43.29:5146
-#EXTINF:-1 tvg-name="高尔夫网球" group-title="CCTV",高尔夫网球
-rtp://239.253.43.12:5146
-#EXTINF:-1 tvg-name="高尔夫网球" group-title="CCTV",高尔夫网球
-rtp://239.253.43.22:5146
 #EXTINF:-1 tvg-name="湖南卫视" group-title="各省卫视",湖南卫视
 rtp://239.77.0.56:5146
 #EXTINF:-1 tvg-name="湖南卫视" group-title="各省卫视",湖南卫视
@@ -395,10 +383,6 @@ rtp://239.77.0.96:5146
 rtp://239.77.0.200:5146
 #EXTINF:-1 tvg-name="CETV-1" group-title="省级和国家级频道",CETV1
 rtp://239.77.1.222:5146
-#EXTINF:-1 tvg-name="CETV4" group-title="省级和国家级频道",CETV4
-rtp://239.253.43.114:5146
-#EXTINF:-1 tvg-name="CETV4" group-title="省级和国家级频道",CETV4
-rtp://239.253.43.40:5146
 #EXTINF:-1 tvg-name="天元围棋" group-title="省级和国家级频道",天元围棋
 rtp://239.253.43.98:5146
 #EXTINF:-1 tvg-name="快乐垂钓" group-title="省级和国家级频道",快乐垂钓
@@ -417,14 +401,6 @@ rtp://239.77.0.83:5146
 rtp://239.77.1.35:5146
 #EXTINF:-1 tvg-name="中学生" group-title="其他",中学生
 rtp://239.77.1.195:5146
-#EXTINF:-1 tvg-name="国学" group-title="其他",国学
-rtp://239.77.0.226:5146
-#EXTINF:-1 tvg-name="国学" group-title="其他",国学
-rtp://239.77.1.105:5146
-#EXTINF:-1 tvg-name="汽摩" group-title="其他",汽摩
-rtp://239.77.0.209:5146
-#EXTINF:-1 tvg-name="汽摩" group-title="其他",汽摩
-rtp://239.77.1.205:5146
 #EXTINF:-1 tvg-name="环球奇观" group-title="其他",环球奇观
 rtp://239.253.43.126:5146
 #EXTINF:-1 tvg-name="环球奇观" group-title="其他",环球奇观
