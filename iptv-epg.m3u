@@ -8,7 +8,7 @@ rtp://239.77.0.169:5146
 #EXTINF:-1 tvg-name="CCTV-4" group-title="CCTV",CCTV4
 rtp://239.77.1.163:5146
 #EXTINF:-1 tvg-name="CCTV-4K" group-title="CCTV",CCTV4K
-rtp://239.77.1.180:5146
+rtp://239.77.0.174:5146
 #EXTINF:-1 tvg-name="CCTV-5" group-title="CCTV",CCTV5
 rtp://239.77.0.170:5146
 #EXTINF:-1 tvg-name="CCTV-5+" group-title="CCTV",CCTV5+
@@ -55,8 +55,6 @@ rtp://239.77.1.122:5146
 rtp://239.253.43.10:5146
 #EXTINF:-1 tvg-name="第一剧场" group-title="CCTV",第一剧场
 rtp://239.253.43.15:5146
-#EXTINF:-1 tvg-name="老故事" group-title="CCTV",老故事
-rtp://239.77.0.220:5146
 #EXTINF:-1 tvg-name="风云剧场" group-title="CCTV",风云剧场
 rtp://239.253.43.16:5146
 #EXTINF:-1 tvg-name="风云音乐" group-title="CCTV",风云音乐
@@ -113,8 +111,6 @@ rtp://239.77.0.230:5146
 rtp://239.77.0.189:5146
 #EXTINF:-1 tvg-name="吉林卫视" group-title="各省卫视",吉林卫视
 rtp://239.77.0.150:5146
-#EXTINF:-1 tvg-name="海南卫视" group-title="各省卫视",海南卫视
-rtp://239.253.43.101:5146
 #EXTINF:-1 tvg-name="新疆卫视" group-title="各省卫视",新疆卫视
 rtp://239.77.0.47:5146
 #EXTINF:-1 tvg-name="西藏卫视" group-title="各省卫视",西藏卫视
@@ -125,8 +121,6 @@ rtp://239.253.43.125:5146
 rtp://239.77.0.49:5146
 #EXTINF:-1 tvg-name="兵团卫视" group-title="各省卫视",兵团卫视
 rtp://239.77.0.48:5146
-#EXTINF:-1 tvg-name="三沙卫视" group-title="各省卫视",三沙卫视
-rtp://239.253.43.113:5146
 #EXTINF:-1 tvg-name="山西卫视" group-title="各省卫视",山西卫视
 rtp://239.77.0.69:5146
 #EXTINF:-1 tvg-name="延边卫视" group-title="各省卫视",延边卫视
@@ -139,10 +133,6 @@ rtp://239.77.0.200:5146
 rtp://239.253.43.98:5146
 #EXTINF:-1 tvg-name="快乐垂钓" group-title="省级和国家级频道",快乐垂钓
 rtp://239.77.0.145:5146
-#EXTINF:-1 tvg-name="求索纪录" group-title="省级和国家级频道",求索纪录
-rtp://239.77.0.21:5146
-#EXTINF:-1 tvg-name="金鹰卡通" group-title="省级和国家级频道",金鹰卡通
-rtp://239.77.0.164:5146
 #EXTINF:-1 tvg-name="CETV-2" group-title="省级和国家级频道",CETV2
 rtp://239.77.0.28:5146
 #EXTINF:-1 tvg-name="书画" group-title="省级和国家级频道",书画
